@@ -1,0 +1,331 @@
+/* ----- Navigation -------------------- */
+/* -- Bread crumbs ------------------ */
+.bread-crumbs
+  padding: 0
+  list-style-type: none
+  display: none
+
+  +tabl
+    display: block
+
+  li
+    display: inline-block
+    vertical-align: middle
+    margin: 0
+
+    &:before
+      content: '/'
+      margin: 0 5px
+
+    &:first-child
+      &:before
+        display: none
+
+
+/* -- Pagination -------------------- */
+.pagination
+  list-style-type: none
+
+  li
+    display: inline-block
+    vertical-align: middle
+    margin: 10px 5px
+
+  a
+    display: block
+    width: 30px
+    height: 30px
+    border-radius: 2px
+    background-color: $cl-gallery
+    line-height: 30px
+    text-align: center
+    text-decoration: none
+    &:hover
+      background-color: #fc8a00
+      color: #fff
+
+  &__prev,
+  &__next
+    a
+      width: auto
+      height: auto
+      border-radius: 0
+      background: none
+
+      &:hover
+        background: none
+        color: #000
+
+  &__active
+    a
+      background-color: #fc8a00
+      color: #fff
+
+
+/* -- Main menu --------------------- */
+.menu-open-wrapper-page
+  overflow: hidden
+  position: fixed
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+
+.burger-menu
+  display: block
+  position: absolute
+  right: 5px
+  top: 20px
+  z-index: 101
+  cursor: pointer
+  border: 1px solid #000
+  padding: 10px
+
+.burger-menu-box
+  display: block
+  width: 30px
+  padding: 8px 0
+
+.burger-menu-inner
+  display: block
+  position: relative
+  height: 3px
+  background-color: $burger-fill
+  border-radius: 3px
+  transition: transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19)
+
+  &:before,
+  &:after
+    content: ' '
+    position: absolute
+    left: 0
+    height: 3px
+    background-color: $burger-fill
+    width: 100%
+    border-radius: 3px
+    transition-timing-function: ease
+    transition-duration: .15s
+    transition-property: transform
+
+  &:before
+    top: -8px
+    transition: top 75ms ease .12s, opacity 75ms ease
+
+  &:after
+    bottom: -8px
+    transition: bottom 75ms ease .12s, transform 75ms cubic-bezier(0.55, 0.055, 0.675, 0.19)
+
+.menu-burger--opened
+  .burger-menu
+    position: fixed
+
+  .burger-menu-inner
+    transition-delay: 0.12s
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+    transform: rotate(45deg)
+
+    &:before
+      top: 0
+      transition: top 75ms ease, opacity 75ms ease 0.12s
+      opacity: 0
+
+    &:after
+      bottom: 0
+      transition: bottom 75ms ease, transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) .12s
+      transform: rotate(-90deg)
+
+  .burger-menu-inner, .burger-menu-inner:after, .burger-menu-inner:before
+    background-color: $burger-fill-open
+
+.menu-wrapper-fixed
+  position: fixed
+  top: 0
+  z-index: 100
+  height: 100%
+  width: 100%
+  left: -100%
+  transition: left 0.4s cubic-bezier(0.000, 0.995, 0.990, 1.000)
+
+.menu-open-wrapper
+  padding: 20px
+  height: 100%
+  overflow: auto
+  -webkit-overflow-scrolling: touch
+  transition: background 0.25s ease-out
+
+.menu-burger--opened
+  .menu-wrapper-fixed
+    left: 0
+
+  .menu-open-wrapper
+    background-color: $fill-menu
+
+  .menu-item
+    margin-left: 0
+    @for $i from 1 through 10
+      &:nth-child(#{$i})
+        transition-delay: (0.06s * $i) - 0.06s
+
+.header-nav
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  min-height: 100%
+
+.menu
+  margin: 0
+  padding: 0
+  list-style: none
+
+.menu-item
+  position: relative
+  margin-top: 20px
+  margin-bottom: 20px
+  padding: 0
+  list-style-type: none
+  font: $font-menu-item-mobile
+  color: #fff
+  width: 100%
+  margin-left: -100%
+  transition: all 0.4s cubic-bezier(0.000, 0.995, 0.990, 1.000)
+
+  &__link
+    color: #fff
+    text-decoration: none
+
+    &:hover
+      color: #fff
+
+
+/* - Drop down main menu -------- */
+.menu-item__link_dd-open
+  padding-left: 20px
+  &:after
+    content: ' '
+    +corner-bottom(5px, 5px, 5px, #fff)
+    border-top-color: #fff
+    margin: 0 0 0 10px
+
+.menu-dd
+  display: none
+  margin: 0
+  padding: 5px 0 0
+  list-style: none
+
+.menu-dd-item
+  line-height: 20px
+  margin: 10px 0
+  position: relative
+
+  &__link
+    color: #fff
+    text-decoration: none
+    font-size: 18px
+
+    &:hover
+      color: #fff
+
+.menu-item_dd-opened
+  .menu-dd
+    display: block
+
+  .menu-item__link_dd-open
+    &:after
+      transform: rotate(180deg)
+
+
+/* Min width 480 pixels */
+@media only screen and (min-width: 480px)
+  
+  /* end media min width 480 pixels */
+
+
+
+/* Min width 768 pixels */
+@media only screen and (min-width: 768px)
+  .menu-open-wrapper-page
+    overflow: visible
+    position: relative
+    height: auto
+    width: auto
+
+  .menu-wrapper-fixed
+    position: relative
+    left: 0
+    top: 0
+    height: auto
+    transition: none
+    width: 100%
+
+  .menu-open-wrapper
+    background: none
+    padding: 0
+    height: auto
+    overflow: visible
+
+  .burger-menu
+    display: none
+
+  .header-nav
+    display: block
+
+  .menu
+    text-align: left
+    background-color: $fill-menu
+    border-radius: 5px
+
+  .menu-item
+    display: inline-block
+    vertical-align: middle
+    font: $font-menu-item
+    width: auto
+    margin: 0
+
+    &__link
+      display: block
+      padding: 10px 15px
+
+      &:hover
+        background-color: $fill-menu-hover
+
+  /* - Drop down main menu -------- */
+  .menu-item_dd-opened
+    .menu-dd
+      display: none
+
+    .menu-item__link_dd-open
+      &:after
+        transform: rotate(0)
+
+  .menu-dd
+    position: absolute
+    display: none
+    top: 100%
+    left: 0
+    min-width: 200px
+    text-align: left
+    background-color: $fill-menu-hover
+    padding: 10px 15px
+    border-radius: 0 0 5px 5px
+
+  .menu-dd-item
+    margin: 15px 0
+
+    &__link
+      white-space: nowrap
+      &:hover
+        text-decoration: underline
+
+  .menu-item
+    &:hover
+      .menu-item__link
+        background-color: $fill-menu-hover
+
+      .menu-dd
+        display: block
+  /* end media min width 768 pixels */
+
+/* ----- END Navigation ---------------- */
+/*                                       */
+/*                                       */

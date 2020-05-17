@@ -1,0 +1,516 @@
+/* ----- Typography -------------------- */
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+body
+  width: 100%
+  margin: 0
+  padding: 0
+  background-color: $site-fill-color
+  font: normal normal 12px/15px $site-font-family
+  color: $site-text-color
+
+.title-site, h1, h2, h3, h4, h5, h6
+  display: block
+  margin: 0 0 15px
+  padding: 0
+  font-family: $title-font-weight
+  font-weight: $title-font-family
+  line-height: $title-line-height
+  color: $site-title-color
+
+h1, .title-site_h1
+  font-size: $site-h1-size-mobile
+  margin-bottom: 20px
+
+h2, .title-site_h2
+  font-size: $site-h2-size-mobile
+  margin-bottom: 20px
+
+h3, .title-site_h3
+  font-size: $site-h3-size-mobile
+
+h4, .title-site_h4
+  font-size: $site-h4-size-mobile
+
+h5, .title-site_h5
+  font-size: $site-h5-size-mobile
+  line-height: 1.3em
+
+h6, .title-site_h6
+  font-size: $site-h6-size-mobile
+  line-height: 1.3em
+
+ul, ol
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+li
+  margin: 0
+  padding: 0
+
+p
+  margin: 0 0 20px
+
+.text-bl
+  ul
+    margin-bottom: 20px
+    list-style-type: disc
+    padding-left: 15px
+
+  ol
+    margin-bottom: 20px
+    list-style-type: decimal
+    padding-left: 15px
+
+  li
+    margin-bottom: 10px
+
+.text_center
+  text-align: center
+
+.text_left
+  text-align: left
+
+.text_right
+  text-align: right
+
+.text_uppercase
+  text-transform: uppercase
+
+.text_hidden
+  display: block
+  white-space: nowrap
+  text-overflow: ellipsis
+  overflow: hidden
+
+
+img
+  vertical-align: middle
+  max-width: 100%
+
+a
+  color: $color-link
+  text-decoration: underline
+
+  &:hover
+    text-decoration: none
+    color: $color-h-link
+
+/* ----- END Typography ---------------- */
+/*                                       */
+/*                                       */
+/* ----- Page structure ---------------- */
+.clear
+  clear: both
+
+.group:after 
+  content: "."
+  clear: both
+  display: block
+  height: 0
+  visibility: hidden
+
+#wrapper
+  min-width: 320px
+
+.container
+  padding-left: 15px
+  padding-right: 15px
+  width: auto
+
+/* ----- Controls styles ----------------- */
+.btn
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  margin: 0
+  padding: $btn-padding
+  font: $btn-font
+  border: none
+  text-align: center
+  text-decoration: none
+  outline: none
+  cursor: pointer
+  color: #325140
+  background: #C7FF93 linear-gradient(180deg, #C7FF93 0%, #95EA45 29.15%, #6DB926 68.73%, #4E9F01 100%)
+  border-radius: 50px
+
+  &:hover, &:focus
+    text-decoration: none
+    color: #325140
+    background: #C7FF93 linear-gradient(360deg, #C7FF93 0%, #95EA45 29.15%, #6DB926 68.73%, #4E9F01 100%)
+
+
+input.btn
+  padding-top: 0
+  padding-bottom: 0
+  height: $input-height
+  width: auto
+  &_max
+    width: 100%
+
+.form-group-grid__four-col
+  .btn
+    vertical-align: bottom
+    display: block
+
+.placeholder
+  color: $st-color-placeholder
+
+input,
+textarea
+  +placeholder-color($st-color-placeholder)
+
+::-webkit-contacts-auto-fill-button
+  opacity: 0
+
+input[type="password"]::-webkit-contacts-auto-fill-button
+  opacity: 1
+
+input,
+textarea
+  position: relative
+  height: 41px
+  width: 100%
+  padding: 0 12px
+  border: none
+  font: $input-font
+  color: $input-color
+  background: rgba(217, 255, 234, 0.5)
+  outline: none
+  border-radius: 4px
+  -webkit-appearance: none
+  box-shadow: $input-shadow
+
+  &:hover
+    background: rgba(217, 255, 234, 0.75)
+
+  &:focus
+    background: rgba(217, 255, 234, 1)
+
+input[type="radio"], input[type="checkbox"]
+  width: auto
+  margin: 3px 5px 3px 0
+  height: 12px
+
+input[type="checkbox"]
+  -webkit-appearance: checkbox
+input[type="radio"]
+  -webkit-appearance: radio
+
+textarea
+  vertical-align: top
+  height: $textarea-height
+  padding: $textarea-padding
+  resize: none
+
+/* ----- END controls ------------------- */
+/*                                       */
+/*                                       */
+/* ----- Forms ------------------------- */
+.st-form
+  margin-bottom: 20px
+
+  &__tt
+    display: block
+
+
+.form-group
+  margin-bottom: 13px
+
+  &__label
+    display: block
+    margin-bottom: 10px
+    font-size: 14px
+    line-height: 18px
+
+  &_inline
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .form-group__label
+      min-width: 140px
+      max-width: 140px
+      padding: 0 10px 0 0
+      margin: 5px 0
+
+.form-group_check
+  display: flex
+  justify-content: flex-start
+  .form-group__label
+    order: 1
+
+.st-form__desc
+  font-size: 11px
+  line-height: 13px
+  text-align: center
+  color: rgba(#FFFFFF, 0.5)
+  margin-bottom: 14px
+  a
+    color: rgba(#FFFFFF, 0.5)
+
+.st-form__btn
+  margin-bottom: 22px
+
+.progres-bar
+  max-width: 244px
+  margin: 0 auto
+  display: flex
+  justify-content: flex-start
+  border: 2px solid #D9FFEA
+  border-radius: 4px
+  padding: 2px
+  > *+*
+    margin-left: 2px
+  li
+    min-width: 32px
+    max-width: 32px
+    font-weight: bold
+    font-size: 9px
+    line-height: 11px
+    text-align: center
+    color: transparent
+    &.active
+      color: #325140
+    span
+      display: block
+      padding: 6px 1px
+      background: #D9FFEA
+      border-radius: 2px
+
+.bl-form
+  text-align: center
+  padding: 20px 20px 5px
+  background-color: #488113
+  color: #fff
+  .title-site, h1, h2, h3, h4, h5, h6
+    color: #D9FFEA
+
+.st-form__fields
+  text-align: left
+  label
+    display: none
+  .form-group
+    max-width: 230px
+    margin-left: auto
+    margin-right: auto
+    &:last-child
+      margin-bottom: 10px
+
+.st-form
+  .title-site, h1, h2, h3, h4, h5, h6
+    margin-bottom: 15px
+
+
+/* ----- END Forms --------------------- */
+/*                                       */
+/*                                       */
+/* ----- Header ------------------------ */
+.header
+  position: relative
+  background: #325140
+
+  &__inner
+    text-align: center
+    padding: 22px 0
+
+  &-users
+    display: none
+
+.logo
+  &_header
+    max-width: 245px
+    margin: 0 auto
+  a
+    display: block
+    outline: none
+
+/* ----- END Header -------------------- */
+/*                                       */
+/*                                       */
+/* ----- footer ------------------- */
+.footer
+  text-align: center
+  font-size: 9px
+  line-height: 150%
+  text-align: center
+  color: #D9FFEA
+  background: #325140
+  padding: 10px 0
+
+  li
+    display: inline-block
+    &:first-child
+      &:before
+        display: none
+    &:before
+      content: '|'
+      margin: 0 8px
+  a
+    color: #D9FFEA
+    text-decoration: none
+    outline: none
+    &:hover, &:focus
+      text-decoration: underline
+
+/* ----- END footer --------------- */
+/*                                  */
+/*                                  */
+/* ----- Index page -------------------- */
+.bl-aside
+  display: none
+
+.bl-message-cap
+  padding: 4px 13px 5px
+  position: relative
+  z-index: 1
+
+.phone-head
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__item
+    min-width: 30%
+    max-width: 30%
+    font-size: 12px
+    line-height: 150%
+    &_grid
+      display: flex
+      align-items: center
+      > *+*
+        margin-left: 4px
+    &_center
+      text-align: center
+      justify-content: center
+    &_last
+      text-align: right
+      justify-content: flex-end
+
+.message-head
+  display: flex
+  justify-content: space-between
+  margin-top: 4px
+  &__link
+    font-size: 14px
+    line-height: 150%
+    color: #488113
+    flex: 0 0 30%
+    padding-top: 8px
+    a
+      color: #488113
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+        color: #488113
+
+  &__info
+    text-align: center
+    flex: 0 0 30%
+  &__picture
+    text-align: right
+    flex: 0 0 30%
+    margin-bottom: -20px
+    padding-top: 3px
+    > *
+      margin-left: auto
+  &__name
+    font-weight: bold
+    font-size: 18px
+    line-height: 150%
+    color: #000000
+    margin-bottom: 5px
+  &__status
+    font-size: 14px
+    line-height: 150%
+    color: #555555
+
+.bl-message-body
+  max-height: calc(100vh - 86px)
+  overflow: auto
+  background: #ECECEC
+  &__wrapp
+    display: flex
+    justify-content: flex-end
+    flex-direction: column
+    padding: 20px 20px 2px
+
+.message
+  margin-bottom: 15px
+  max-width: 220px
+  border-radius: 10px
+  position: relative
+  z-index: 1
+  &:before
+    content: ' '
+    position: absolute
+    top: 20px
+    right: 100%
+    border: 9px solid #fff
+    border-left-color: transparent
+    border-bottom-color: transparent
+  &_picture
+    overflow: hidden
+    display: inline-block
+    vertical-align: top
+    max-width: 280px
+    max-height: 200px
+    flex-shrink: 0
+
+  &_txt
+    padding: 15px 20px 10px
+    background: #FBFBFB
+
+  &__txt
+    font-size: 11px
+    line-height: 150%
+
+  &_out
+    margin-left: auto
+    background: #D9FFEA
+    &:before
+      border-top-color: #D9FFEA
+      border-left-color: #D9FFEA
+      border-right-color: transparent
+      left: 100%
+      right: auto
+    &.message_picture
+      margin-left: auto
+
+  &_in
+    &.message_picture
+      margin-right: auto
+
+.message-info
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  &__data-time
+    font-size: 11px
+    line-height: 150%
+    color: #000
+    margin-right: 3px
+    padding-bottom: 1px
+
+
+.contact-card-pic
+  min-width: 72px
+  max-width: 72px
+  height: 72px
+  border-radius: 50%
+  border: 4px solid #488113
+  display: block
+  overflow: hidden
+  >img
+    object-fit: cover
+    object-position: center top
+    width: 100%
+    height: 100%
+
+/* ----- END index page /--------------- */
+/*                                       */
+/*                                       */

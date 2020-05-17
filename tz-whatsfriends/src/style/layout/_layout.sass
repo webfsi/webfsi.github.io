@@ -1,0 +1,102 @@
+/* ----- Page structure ---------------- */
+.clear
+  clear: both
+
+.group:after 
+  content: "."
+  clear: both
+  display: block
+  height: 0
+  visibility: hidden
+
+#wrapper
+  min-width: 320px
+
+.section-st
+  padding: 20px 0
+
+.container
+  padding-left: 15px
+  padding-right: 15px
+  width: auto
+
+.visible-lap, .hidden-full, .hidden-mobile
+  display: none
+
+
+/* Min width 768 pixels */
+@media only screen and (min-width: 768px)
+  .hidden-mobile
+    display: block
+    
+  .hidden-tabl
+    display: block
+  /* end media min width 768 pixels */
+
+
+/* Min width 1000 pixels */
+@media only screen and (min-width: 1000px)
+  html, body
+    height: 100%
+
+  body
+    display: flex
+    flex-direction: column
+
+  #wrapper
+    flex: 1 0 auto
+
+  .footer
+    flex-shrink: 0
+
+  .section-st
+    padding: 50px 0
+
+  .container
+    max-width: 980px
+    padding-left: 10px
+    padding-right: 10px
+    margin: 0 auto
+
+  .visible-lap
+    display: block
+
+  .hidden-lap
+    display: none
+  /* end media min width 1000 pixels */
+
+
+/* Min width 1220 pixels */
+@media only screen and (min-width: 1220px)
+  .section-st_lg
+    padding: 80px 0
+  .hidden-lap
+    display: block
+  .container
+    max-width: 1170px
+  /* end media min width 1220 pixels */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
