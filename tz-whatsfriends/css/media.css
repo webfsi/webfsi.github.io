@@ -248,6 +248,36 @@
     height: calc(100vh - 136px - 36px - 86px);
     max-height: calc(100vh - 136px - 36px - 86px);
   }
+  .grid-page {
+    background: #488113;
+  }
+  .bl-aside, .bl-message {
+    background-color: #fff;
+  }
+  .grid-page__col-left {
+    animation-name: left-push;
+    animation-duration: 1s;
+  }
+  .grid-page__col-right {
+    animation-name: right-push;
+    animation-duration: 1s;
+  }
+  @keyframes left-push {
+    from {
+      transform: translate(-100%, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes right-push {
+    from {
+      transform: translate(100%, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
   /* end media min width 1000 pixels */
 }
 
