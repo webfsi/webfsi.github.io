@@ -2306,6 +2306,193 @@ input.radio__input {
 /*                                                   */
 /*                                                   */
 /* ----- Index page -------------------- */
+a {
+  color: #ff5b00;
+}
+
+a:hover {
+  color: #ff5b00;
+}
+
+.anim-tt {
+  position: relative;
+  height: 100%;
+}
+
+.anim-tt span {
+  height: 10%;
+  display: inline-block;
+  position: relative;
+  -webkit-animation-name: animtttwo;
+          animation-name: animtttwo;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.anim-tt span:before {
+  content: "";
+  position: absolute;
+  height: 57%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.anim-tt:before {
+  content: "" attr(data-anim) "";
+  position: absolute;
+  height: 57%;
+  overflow: hidden;
+  color: inherit;
+  z-index: 1;
+  -webkit-animation-name: animttone;
+          animation-name: animttone;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes animttone {
+  from {
+    -webkit-transform: translate(80px, -20px);
+            transform: translate(80px, -20px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animttone {
+  from {
+    -webkit-transform: translate(80px, -20px);
+            transform: translate(80px, -20px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes animtttwo {
+  from {
+    -webkit-transform: translate(80px, 20px);
+            transform: translate(80px, 20px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes animtttwo {
+  from {
+    -webkit-transform: translate(80px, 20px);
+            transform: translate(80px, 20px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.sbar-cap__inner {
+  position: relative;
+}
+
+.sbar-cap__inner svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.sbar-cap__inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.sbar-cap__inner .two {
+  opacity: 0;
+  -webkit-animation-name: imgopen;
+          animation-name: imgopen;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.circle {
+  stroke-dasharray: 630;
+  stroke-dashoffset: 630;
+  -webkit-animation-name: stroke;
+          animation-name: stroke;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes imgopen {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.001% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imgopen {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.001% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /* ----- END index page /--------------- */
 /*                                       */
 /*                                       */
@@ -2316,6 +2503,7 @@ input.radio__input {
 
 .lang {
   position: absolute;
+  z-index: 2;
   top: 15px;
   right: 15px;
   -webkit-perspective: 1000px;
