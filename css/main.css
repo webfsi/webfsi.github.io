@@ -1,5 +1,16 @@
 /* ----- Styles site ------------------- */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+.preview-img-hidden {
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
 button, hr, input {
   overflow: visible;
 }
