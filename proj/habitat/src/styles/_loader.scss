@@ -1,0 +1,146 @@
+.loader {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+  // z-index: 9998;
+  // overflow: hidden;
+
+  background: #000;
+  height: calc(100vh);
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2010;
+  transition: transform 1s cubic-bezier(.77,0,.175,1) 3s;
+
+  &.ready {
+    transform: translate3d(0,-100%,0)!important;
+    .loader__item {
+      margin-top: -6%;
+      opacity: 1;
+      -webkit-transform: scale(1.05) translate3d(0,-100%,0) translateZ(0);
+      transform: scale(1.05) translate3d(0,-100%,0) translateZ(0);
+    }
+  }
+
+  &__wrapp {
+    // width: 100%;
+    // height: 100%;
+    // display: block;
+    // position: relative;
+    
+    pointer-events: none;
+    position: absolute;
+    top: calc(-5vh);
+    width: 100%;
+    z-index: 21;
+    height: calc(110vh);
+  }
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  &__item {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    // width: 100%;
+    // height: 100%;
+
+    display: block;
+    height: 112%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: -6%;
+    width: 100%;
+    img, picture {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    &:first-child {
+      // transform: translateY(0);
+      // z-index: 3;
+      // animation: {
+      //   name: transition1;
+      //   duration: 1s;
+      //   timing-function: ease-in; // ease | ease-in-out
+      //   delay: 0.5s; //задержка
+      //   iteration-count: 1; // infinite | <number>
+      //   direction: normal; // reverse; alternate; alternate-reverse;
+      //   fill-mode: forwards; // none | forwards | backwards | both
+      //   play-state: running; // running | paused
+      // }
+
+      margin-top: 0!important;
+      z-index: 24;
+      -webkit-transition: opacity .3s ease-out .3s,-webkit-transform 1s cubic-bezier(.77,0,.175,1) 1s;
+      transition: opacity .3s ease-out .3s,transform 1s cubic-bezier(.77,0,.175,1) 1s;
+    }
+    &:nth-child(2) {
+      // transform: translateY(0);
+      // z-index: 2;
+      // animation: {
+      //   name: transition1;
+      //   duration: 1s;
+      //   timing-function: ease-in; // ease | ease-in-out
+      //   delay: 1.5s; //задержка
+      //   iteration-count: 1; // infinite | <number>
+      //   direction: normal; // reverse; alternate; alternate-reverse;
+      //   fill-mode: forwards; // none | forwards | backwards | both
+      //   play-state: running; // running | paused
+      // }
+
+      margin-top: 18%;
+      z-index: 23;
+      -webkit-transition: margin-top 1.6s ease-out 1s,opacity 0s 1s,-webkit-transform 1s cubic-bezier(.77,0,.175,1) 2.2s;
+      transition: margin-top 1.6s ease-out 1s,opacity 0s 1s,transform 1s cubic-bezier(.77,0,.175,1) 2.2s;
+      
+    }
+    &:nth-child(3) {
+      // transform: translateY(0);
+      // z-index: 1;
+      // animation: {
+      //   name: transition1;
+      //   duration: 1s;
+      //   timing-function: ease-in; // ease | ease-in-out
+      //   delay: 2.5s; //задержка
+      //   iteration-count: 1; // infinite | <number>
+      //   direction: normal; // reverse; alternate; alternate-reverse;
+      //   fill-mode: forwards; // none | forwards | backwards | both
+      //   play-state: running; // running | paused
+      // }
+
+      margin-top: 18%;
+      z-index: 22;
+      -webkit-transition: margin-top 1.6s ease-out 2.2s,opacity 0s 1s,-webkit-transform 1s cubic-bezier(.77,0,.175,1) 3.4s;
+      transition: margin-top 1.6s ease-out 2.2s,opacity 0s 1s,transform 1s cubic-bezier(.77,0,.175,1) 3.4s;
+    }
+  }
+}
+
+@keyframes transition1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+
