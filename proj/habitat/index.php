@@ -9,7 +9,7 @@
     
     <div class="cursor"></div>
     <?php include('_preloader.php') ?>
-    <?php include('_cookies.php') ?>
+    <!-- <?php include('_cookies.php') ?> -->
     <?php include('_header-nav.php') ?>
     <div class="wrapper wrapper_load" data-scroll-container>
         <main>

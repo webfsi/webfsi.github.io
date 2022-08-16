@@ -13,8 +13,8 @@ export default () => {
     document.addEventListener('mousemove', (e) => {
       let x = e.pageX;
       let y = e.pageY;
-      curs.style.left = (x - 9) + "px";
-      curs.style.top = (y - 9) + "px";
+      curs.style.left = (x - 30) + "px";
+      curs.style.top = (y - 30) + "px";
       curs.classList.add('active');
       curs.classList.remove('hidden');
     });
@@ -22,8 +22,8 @@ export default () => {
     document.addEventListener('mouseleave', (e) => {
       let x = e.pageX;
       let y = e.pageY;
-      curs.style.left = (x - 9) + "px";
-      curs.style.top = (y - 9) + "px";
+      curs.style.left = (x - 30) + "px";
+      curs.style.top = (y - 30) + "px";
       curs.classList.add('hidden');
       curs.classList.remove('active');
     });
