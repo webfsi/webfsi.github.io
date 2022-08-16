@@ -284,8 +284,8 @@ main {
 }
 
 .cursor {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border: 3px solid white;
   border-radius: 50%;
   position: absolute;
@@ -315,8 +315,105 @@ main {
   padding-right: 0 !important;
   overflow-y: hidden !important;
 }
-.loader.hidden.ready {
+.loader.hidden {
   display: none;
+}
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 24px;
+  z-index: 100;
+  color: #000000;
+  transition: all 0.6s ease-in-out;
+  &.active {
+    bottom: -100%;
+  }
+  &.hidden {
+    display: none;
+  }
+  &__inner {
+    padding: fzm(12px) fzm(12px);
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    @include min-tablet {
+      padding: fzl(24px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 100px;
+      
+    }
+    @include min-desktop {
+      padding: fzd(24px);
+    }
+  }
+  &__txt {
+    margin-bottom: fzm(10px);
+    @include min-tablet {
+      margin-right: fzl(30px);
+      margin-bottom: 0;
+    }
+    @include min-desktop {
+      margin-right: fzd(30px);
+    }
+  }
+  &__btn {
+    flex-shrink: 0;
+  }
+}
+
+.page {
+  &-contacts {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #000;
+      z-index: 10;
+      pointer-events: none;
+      animation: {
+        name: contactPage;
+        duration: 2s;
+        timing-function: linear; // ease | ease-in-out
+        delay: 0s; //задержка
+        iteration-count: 1; // infinite | <number>
+        direction: normal; // reverse; alternate; alternate-reverse;
+        fill-mode: forwards; // none | forwards | backwards | both
+        play-state: running; // running | paused
+      }
+    }
+    &_anim-hidden {
+      &:after {
+        display: none;
+      }
+    }
+    .header__btn {
+      .btn-dot {
+        pointer-events: none;
+      }
+    }
+  }
+  &-home {
+    .header__logo-btn {
+      pointer-events: none;
+    }
+  }
+}
+
+@keyframes contactPage {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
 }
 
 // .pin-spacer {

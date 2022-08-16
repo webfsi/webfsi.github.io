@@ -1,13 +1,31 @@
+.wrapper.wrapper_load {
+  .hero-home .card-preview {
+    &:nth-child(-n+2) {
+      transform: translate(0, 70px);
+      opacity: 0 !important;
+    }
+  }
+}
+.wrapper {
+  .hero-home .card-preview {
+    &:nth-child(-n+2) {
+      transform: translate(0, 0);
+      // opacity: 0 !important;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
 .hero-home {
   padding-top: fzm(168px);
-  padding-bottom: fzm(144px);
+  padding-bottom: fzm(32px);
   @include min-tablet {
     padding-top: fzl(168px);
-    padding-bottom: fzl(72px);
+    padding-bottom: fzl(144px);
   }
   @include min-desktop {
     padding-top: fzd(224px);
-    padding-bottom: fzd(96px);
+    padding-bottom: fzd(128px);
   }
   &__tt {
     margin-bottom: fzm(40px);
@@ -47,13 +65,19 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    grid-column-gap: 20px;
   }
   .card-preview {
-    &:nth-child(2) {
-      width: fzm(280px);
+    &:nth-child(2n) {
       margin-left: auto;
       @include min-tablet {
+        margin-left: 0;
+      }
+    }
+    &:nth-child(2) {
+      width: fzm(280px);
+      @include min-tablet {
+        margin-left: auto;
         width: fzl(416px);
         margin-left: 0;
       }
@@ -63,8 +87,8 @@
     }
     &:nth-child(3) {
       width: fzm(280px);
-      margin-left: auto;
       @include min-tablet {
+        margin-left: auto;
         width: fzl(416px);
         margin-left: 0;
       }
@@ -75,8 +99,8 @@
     }
     &:nth-child(6) {
       width: fzm(280px);
-      margin-left: auto;
       @include min-tablet {
+        margin-left: auto;
         width: fzl(416px);
         margin-left: 0;
       }
@@ -85,10 +109,10 @@
       }
       
     }
-    &:nth-child(7) {
+    &:nth-child(7), &:nth-child(10), &:nth-child(11), &:nth-child(14), &:nth-child(15), &:nth-child(18), &:nth-child(19) {
       width: fzm(280px);
-      margin-left: auto;
       @include min-tablet {
+        margin-left: auto;
         width: fzl(416px);
         margin-left: 0;
       }
@@ -107,22 +131,28 @@
   @include min-tablet {
     width: fzl(640px);
     margin-bottom: fzl(64px);
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 0;
+    }
   }
   @include min-desktop {
     width: fzd(864px);
-    margin-bottom: fzd(32px);
+    margin-bottom: fzd(96px);
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 0;
+    }
   }
   &__img {
     position: relative;
     overflow: hidden;
     background: #8E7D6F;
-    margin-bottom: 16px;
+    margin-bottom: fzm(16px);
     padding-bottom: 100%;
     @include min-tablet {
-      margin-bottom: 24px;
+      margin-bottom: fzl(24px);
     }
     @include min-desktop {
-      margin-bottom: 32px;
+      margin-bottom: fzd(32px);
     }
     img {
       position: absolute;
@@ -153,29 +183,37 @@
   }
   &__subtt {
     font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: fzm(12px);
+    line-height: (18/12);
     color: $c-grey;
-    margin-bottom: 8px;
+    margin-bottom: fzm(8px);
     @include min-tablet {
-      margin-bottom: 4px;
+      margin-bottom: fzl(4px);
+      font-size: fzl(12px);
+      line-height: (20/16);
     }
     @include min-desktop {
-      margin-bottom: 8px;
+      margin-bottom: fzd(8px);
+      font-size: fzd(16px);
+      line-height: (28/16);
     }
   }
   &__tt {
-    margin-bottom: 16px;
+    margin-bottom: fzm(16px);
     @include min-tablet {
-      margin-bottom: 12px;
+      margin-bottom: fzl(12px);
     }
     @include min-desktop {
-      margin-bottom: 16px;
+      margin-bottom: fzd(16px);
     }
   }
   &__btns {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -10px;
+    @include min-tablet {
+      margin-right: -8px;
+    }
     .btn {
       margin-right: 8px;
       margin-bottom: 8px;

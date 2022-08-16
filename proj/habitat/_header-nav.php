@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="header__inner">
 			<div class="header__logo">
-				<a href="#">
+				<button class="header__logo-btn" data-btn-home>
 					<!-- <img class="header__logo-img" src="assets/img/logo.svg" alt="logotype"> -->
 					<!-- <img class="header__logo-img-sm" src="assets/img/logo-sm.svg" alt="logotype"> -->
 					<svg class="logo-svg" width="150" height="56" viewBox="0 0 150 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,10 +18,10 @@
 						<path class="logo-svg__item" d="M148.061 41.2346C147.662 41.4029 147.233 41.4886 146.799 41.4864C145.951 41.4737 145.142 41.127 144.551 40.5225C143.96 39.9179 143.635 39.1051 143.648 38.2628C143.661 37.4205 144.01 36.6177 144.619 36.031C145.228 35.4443 146.047 35.1218 146.895 35.1344C147.7 35.1631 148.464 35.4897 149.038 36.05C149.612 36.6103 149.954 37.3636 149.996 38.1616C150.018 38.5913 149.952 39.021 149.801 39.4244C149.651 39.8278 149.419 40.1965 149.119 40.5077C148.82 40.819 148.46 41.0664 148.061 41.2346Z" fill="currentColor"/>
 					</svg>
 
-				</a>
+				</button>
 			</div>
 			<div class="header__btn">
-				<a href="#" class="btn-dot">Hire us</a>
+				<button class="btn-dot" data-load-content>Hire us</button>
 			</div>
 		</div>
 	</div>

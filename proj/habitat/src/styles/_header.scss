@@ -22,13 +22,26 @@
   &__logo {
     max-width: fzm(107px);
     line-height: 0;
+    width: 100%;
     @include min-tablet {
       max-width: fzl(107px);
     }
     @include min-desktop {
       max-width: fzd(150px);
     }
-    a {
+    &-btn {
+      background: none;
+      color: inherit;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      width: 100%;
+      display: block;
+      text-align: left;
+      height: auto;
+      line-height: 0;
+    }
+    a, button {
       width: 100%;
       display: block;
       img, svg {
@@ -101,6 +114,9 @@
       transition: all 0.3s ease-in-out;
       transform: translateX(0);
     }
+  }
+  &.diference  {
+    mix-blend-mode: difference; 
   }
   &.visible {
     .logo-svg {

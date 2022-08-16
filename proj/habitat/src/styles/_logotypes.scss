@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @include min-tablet {
-    justify-content: space-between;
-  }
+  // @include min-tablet {
+  //   justify-content: space-between;
+  // }
   &__item {
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
       width: fzl(304px);
       height: fzl(108px);
       margin-bottom: fzl(104px);
-      margin-right: fzl(100px);
+      margin-right: fzl(200px);
       &:nth-child(3n) {
         margin-right: 0;
       }
@@ -30,7 +30,7 @@
       width: fzd(416px);
       height: fzd(144px);
       margin-bottom: fzd(136px);
-      margin-right: fzd(100px);
+      margin-right: fzd(256px);
       &:nth-child(3n) {
         margin-right: 0;
       }

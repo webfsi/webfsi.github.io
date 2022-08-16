@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="assets/libs/locomotive-scroll.css" />
 <link rel="stylesheet" href="assets/libs/aksFileUpload.min.css" />
 <link rel="stylesheet" href="assets/css/app.min.css" /></head>
-<body>
+<body class="page-home">
     
     <div class="cursor"></div>
     <div class="loader" data-loader>
@@ -31,12 +31,21 @@
       <img src="#" alt="image">
     </div>
   </div>
+</div>    <div class="cookies" data-cookies>
+    <div class="container">
+        <div class="cookies__inner">
+            <h4 class="cookies__txt h4">🍪 We use cookies to provide the best site experience.</h4>
+            <div class="cookies__btn">
+                <button class="btn btn_sm btn_sm_lg-desc">Ok, don’t show again</button>
+            </div>
+        </div>
+    </div>
 </div>    <!-- header -->
 <header class="header" id="header">
 	<div class="container">
 		<div class="header__inner">
 			<div class="header__logo">
-				<a href="#">
+				<button class="header__logo-btn" data-btn-home>
 					<!-- <img class="header__logo-img" src="assets/img/logo.svg" alt="logotype"> -->
 					<!-- <img class="header__logo-img-sm" src="assets/img/logo-sm.svg" alt="logotype"> -->
 					<svg class="logo-svg" width="150" height="56" viewBox="0 0 150 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,15 +60,15 @@
 						<path class="logo-svg__item" d="M148.061 41.2346C147.662 41.4029 147.233 41.4886 146.799 41.4864C145.951 41.4737 145.142 41.127 144.551 40.5225C143.96 39.9179 143.635 39.1051 143.648 38.2628C143.661 37.4205 144.01 36.6177 144.619 36.031C145.228 35.4443 146.047 35.1218 146.895 35.1344C147.7 35.1631 148.464 35.4897 149.038 36.05C149.612 36.6103 149.954 37.3636 149.996 38.1616C150.018 38.5913 149.952 39.021 149.801 39.4244C149.651 39.8278 149.419 40.1965 149.119 40.5077C148.82 40.819 148.46 41.0664 148.061 41.2346Z" fill="currentColor"/>
 					</svg>
 
-				</a>
+				</button>
 			</div>
 			<div class="header__btn">
-				<a href="#" class="btn-dot">Hire us</a>
+				<button class="btn-dot" data-load-content>Hire us</button>
 			</div>
 		</div>
 	</div>
 </header>
-<!-- end header -->    <div class="wrapper" data-scroll-container>
+<!-- end header -->    <div class="wrapper wrapper_load" data-scroll-container>
         <main>
             <section class="hero-home">
   <div class="container">
@@ -259,316 +268,298 @@
 
     </div>
   </div>
-</section>            <div class="div">
-  <section class="team-list" data-team-scroll-horyzontall>
-    <div class="container">
-      <h2 class="team-list__tt h2">Meet the team.</h2>
-    </div>
-  
-    <div class="team-slider-wrapp">
-      <div class="team-slider">
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t1.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t1-2.jpg" alt="image">
+</section>            <section class="team-list-wrapper">
+  <div class="team-list" data-team-scroll-horyzontall>
+    <div class="team-list__inner">
+      <div class="container">
+        <h2 class="team-list__tt h2">Meet the team.</h2>
+      </div>
+      <div class="team-slider-wrapp">
+        <div class="team-slider">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t1.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t1-2.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Victor Samokhvalov</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Founder & Head of Design</span>
+              <span>---</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Victor Samokhvalov</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Founder & Head of Design</span>
-            <span>---</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t2.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t2-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t2.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t2-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Helen Prokopovych</div>
+            <div class="team-slider__subname txt-sm">
+              <span>CEO, POC</span>
+              <span>Healthy food and good mood 🥑</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Helen Prokopovych</div>
-          <div class="team-slider__subname txt-sm">
-            <span>CEO, POC</span>
-            <span>Healthy food and good mood 🥑</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t3.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t3-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t3.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t3-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Alina Zhaivoron</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Art-director</span>
+              <span>Harry Potter collector, knows all the spells ⚡️</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Alina Zhaivoron</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Art-director</span>
-            <span>Harry Potter collector, knows all the spells ⚡️</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t4.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t4-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t4.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t4-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Anna Hnap</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Product & Service Designer</span>
+              <span>Good at talking not only with people 🐶</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Anna Hnap</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Product & Service Designer</span>
-            <span>Good at talking not only with people 🐶</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t5.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t5-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t5.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t5-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Serhiy Trofymchuk</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Product & Service Designer</span>
+              <span>Cocktails, the King of Aperoland 🍹</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Serhiy Trofymchuk</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Product & Service Designer</span>
-            <span>Cocktails, the King of Aperoland 🍹</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t6.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t6-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t6.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t6-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Leonid Maksymyk</div>
+            <div class="team-slider__subname txt-sm">
+              <span>UX / UI Designer</span>
+              <span>Yes, I really need all these board games 🎲</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Leonid Maksymyk</div>
-          <div class="team-slider__subname txt-sm">
-            <span>UX / UI Designer</span>
-            <span>Yes, I really need all these board games 🎲</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t7.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t7-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t7.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t7-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Ellen Demchuk</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Product & Service Designer</span>
+              <span>Creating beauty not only in digital 🎨</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Ellen Demchuk</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Product & Service Designer</span>
-            <span>Creating beauty not only in digital 🎨</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t8.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t8-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t8.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t8-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Roksolana Slobodianiuk</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Web & Graphic Designer</span>
+              <span>Manga & anime, PSP games, and cozy bed 🍥</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Roksolana Slobodianiuk</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Web & Graphic Designer</span>
-            <span>Manga & anime, PSP games, and cozy bed 🍥</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t9.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t9-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t9.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t9-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Daria Volkoshovets</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Marketing Designer</span>
+              <span>Yoga lover, knows all the asanas 🌿</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Daria Volkoshovets</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Marketing Designer</span>
-            <span>Yoga lover, knows all the asanas 🌿</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t10.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t10-2.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t10.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t10-2.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Vasily Tyvonchuk</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Brand Experience Designer</span>
+              <span>Italy and rock like cheese and carbonara 🧀</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Vasily Tyvonchuk</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Brand Experience Designer</span>
-            <span>Italy and rock like cheese and carbonara 🧀</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t11.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t11-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t11.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t11-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Valentina Oliiarnyk</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Project Manager</span>
+              <span>Juggling projects and dumbbells like a pro 💪</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Valentina Oliiarnyk</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Project Manager</span>
-            <span>Juggling projects and dumbbells like a pro 💪</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t12.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t12-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t12.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t12-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Dmytro Dedukh</div>
+            <div class="team-slider__subname txt-sm">
+              <span>UX / UI Designer</span>
+              <span>In love with extreme, speed, cars and racing 🏎</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Dmytro Dedukh</div>
-          <div class="team-slider__subname txt-sm">
-            <span>UX / UI Designer</span>
-            <span>In love with extreme, speed, cars and racing 🏎</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t13.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t13-2.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t13.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t13-2.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Oksana Gunko</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Financial Analyst</span>
+              <span>--- </span>
             </div>
           </div>
-          <div class="team-slider__name h4">Oksana Gunko</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Financial Analyst</span>
-            <span>--- </span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t14.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t14-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t14.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t14-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Antonina Diadenchuk</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Marketing Designer</span>
+              <span>Run, eat, design, sleep, repeat 🥇</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Antonina Diadenchuk</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Marketing Designer</span>
-            <span>Run, eat, design, sleep, repeat 🥇</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t15.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t15-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t15.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t15-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Valerie Biletska</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Marketing Designer</span>
+              <span>Dance like nobody's watching 💃</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Valerie Biletska</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Marketing Designer</span>
-            <span>Dance like nobody's watching 💃</span>
-          </div>
-        </div>
-  
-        <div class="team-slider__item">
-          <div class="team-slider__img">
-            <img src="assets/img/t16.jpg" alt="image">
-            <div class="team-slider__img-open">
-              <img src="assets/img/t16-1.jpg" alt="image">
+          <div class="team-slider__item">
+            <div class="team-slider__img">
+              <img src="assets/img/t16.jpg" alt="image">
+              <div class="team-slider__img-open">
+                <img src="assets/img/t16-1.jpg" alt="image">
+              </div>
+            </div>
+            <div class="team-slider__name h4">Nazar</div>
+            <div class="team-slider__subname txt-sm">
+              <span>Designer</span>
+              <span>Tea man</span>
             </div>
           </div>
-          <div class="team-slider__name h4">Nazar</div>
-          <div class="team-slider__subname txt-sm">
-            <span>Designer</span>
-            <span>Tea man</span>
-          </div>
         </div>
-  
       </div>
     </div>
-  </section>
-</div>            <section class="service-box" data-service-anim>
-  <div class="container">
-    <h2 class="service-box__tt h2">Our services.</h2>
   </div>
-  <div class="service-cards-wrapp">
-    <div class="service-cards" data-mob-box>
-
-      <div class="service-card">
-        <div class="service-card__info">
-          <div class="service-card__tt h3">Extended design team</div>
-          <div class="service-card__txt txt-st">We merge with your team to provide our expertise in web, product, brand, and graphic design to solve your business challenges.</div>
-        </div>
-        <div class="service-card__image">
-          <img src="assets/img/service1.jpg" alt="image">
-        </div>
+</section>            <section class="service-box-wrapp">
+  <div class="service-box" data-service-anim>
+    <div class="service-box__inner">
+      <div class="container">
+        <h2 class="service-box__tt h2">Our services.
+          <!-- <button class="btn" data-refresh>Refresh</button> -->
+        </h2>
       </div>
-
-      <div class="service-card">
-        <div class="service-card__info">
-          <div class="service-card__tt h3">Improve your product</div>
-          <div class="service-card__txt txt-st">In the fast-changing world, digital products and identities need to be constantly adjusted to the new user's needs. Our team will provide tailored custom solutions for your existing product.</div>
-        </div>
-        <div class="service-card__image">
-          <img src="assets/img/service2.jpg" alt="image">
-        </div>
-      </div>
-
-      <div class="service-card">
-        <div class="service-card__info">
-          <div class="service-card__tt h3">Create a new product</div>
-          <div class="service-card__txt txt-st">There is a long path between an idea and a product. Our team  will take you through all the necessary stages of discovery and design  to create an MVP.</div>
-        </div>
-        <div class="service-card__image">
-          <img src="assets/img/service3.jpg" alt="image">
-        </div>
-      </div>
-
-    </div>
-    
-    <div class="service-cards" data-desk-box>
-
-      <div class="service-card-grid">
-        <div class="service-card" data-card-value="one">
-          <div class="service-card__info">
-            <div class="service-card__tt h3">Extended design team</div>
-            <div class="service-card__txt txt-st">We merge with your team to provide our expertise in web, product, brand, and graphic design to solve your business challenges.</div>
+      <div class="service-cards-wrapp">
+        <div class="service-cards" data-mob-box>
+          <div class="service-card">
+            <div class="service-card__info">
+              <div class="service-card__tt h3">Extended design team</div>
+              <div class="service-card__txt txt-st">We merge with your team to provide our expertise in web, product, brand, and graphic design to solve your business challenges.</div>
+            </div>
+            <div class="service-card__image">
+              <img src="assets/img/service1.jpg" alt="image">
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card__info">
+              <div class="service-card__tt h3">Improve your product</div>
+              <div class="service-card__txt txt-st">In the fast-changing world, digital products and identities need to be constantly adjusted to the new user's needs. Our team will provide tailored custom solutions for your existing product.</div>
+            </div>
+            <div class="service-card__image">
+              <img src="assets/img/service2.jpg" alt="image">
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card__info">
+              <div class="service-card__tt h3">Create a new product</div>
+              <div class="service-card__txt txt-st">There is a long path between an idea and a product. Our team  will take you through all the necessary stages of discovery and design  to create an MVP.</div>
+            </div>
+            <div class="service-card__image">
+              <img src="assets/img/service3.jpg" alt="image">
+            </div>
           </div>
         </div>
-        <div class="service-card" data-card-value="two">
-          <div class="service-card__info">
-            <div class="service-card__tt h3">Improve your product</div>
-            <div class="service-card__txt txt-st">In the fast-changing world, digital products and identities need to be constantly adjusted to the new user's needs. Our team will provide tailored custom solutions for your existing product.</div>
+        <div class="service-cards" data-desk-box>
+          <div class="service-card-grid">
+            <div class="service-card" data-card-value="one">
+              <div class="service-card__info">
+                <div class="service-card__tt h3">Extended design team</div>
+                <div class="service-card__txt txt-st">We merge with your team to provide our expertise in web, product, brand, and graphic design to solve your business challenges.</div>
+              </div>
+            </div>
+            <div class="service-card" data-card-value="two">
+              <div class="service-card__info">
+                <div class="service-card__tt h3">Improve your product</div>
+                <div class="service-card__txt txt-st">In the fast-changing world, digital products and identities need to be constantly adjusted to the new user's needs. Our team will provide tailored custom solutions for your existing product.</div>
+              </div>
+            </div>
+            <div class="service-card" data-card-value="three">
+              <div class="service-card__info">
+                <div class="service-card__tt h3">Create a new product</div>
+                <div class="service-card__txt txt-st">There is a long path between an idea and a product. Our team  will take you through all the necessary stages of discovery and design  to create an MVP.</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="service-card" data-card-value="three">
-          <div class="service-card__info">
-            <div class="service-card__tt h3">Create a new product</div>
-            <div class="service-card__txt txt-st">There is a long path between an idea and a product. Our team  will take you through all the necessary stages of discovery and design  to create an MVP.</div>
+          <div class="service-cards-image">
+            <div class="service-card__image" data-card-val="one">
+              <img src="assets/img/service1.jpg" alt="image">
+            </div>
+            <div class="service-card__image" data-card-val="two">
+              <img src="assets/img/service2.jpg" alt="image">
+            </div>
+            <div class="service-card__image" data-card-val="three">
+              <img src="assets/img/service4.jpg" alt="image">
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="service-cards-image">
-        <div class="service-card__image" data-card-val="one">
-          <img src="assets/img/service1.jpg" alt="image">
-        </div>
-        <div class="service-card__image" data-card-val="two">
-          <img src="assets/img/service2.jpg" alt="image">
-        </div>
-        <div class="service-card__image" data-card-val="three">
-          <img src="assets/img/service4.jpg" alt="image">
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -621,10 +612,10 @@
         <div class="txt-hover-box__txt txt-lg txt-hover-img txt-hover-img_two" data-img="assets/img/img-hover1.jpg">We approach design with flexibility. There is nothing stable nowadays. Thus we adjust our design approach to every client, every project, and every task.</div>
       </div>
       <div class="txt-hover-box" data-fx="3">
-        <div class="txt-hover-box__txt txt-lg txt-hover-img txt-hover-img_three" data-img="assets/img/img-hover1.jpg">We are not just service providers, we are partners. We partner with startups and product companies who believe that design can solve any user problem. We help them to serve their users and get better.</div>
+        <div class="txt-hover-box__txt txt-lg txt-hover-img txt-hover-img_three" data-img="assets/img/img-hover1.jpg">We are not just service providers, we are partners. <br> We partner with startups and product companies who believe that design can solve any user problem. We help them to serve their users and get better.</div>
       </div>
       <div class="txt-hover-box" data-fx="3" data-scroll>
-        <div class="txt-hover-box__txt txt-lg txt-hover-img txt-hover-img_four" data-img="assets/img/img-hover1.jpg">We work with the products we believe in.  Today we contribute to the ideas, that will take the lead tomorrow.</div>
+        <div class="txt-hover-box__txt txt-lg txt-hover-img txt-hover-img_four" data-img="assets/img/img-hover1.jpg">We work with the products we believe in. <br> Today we contribute to the ideas, that will take the lead tomorrow.</div>
       </div>
     </div>
   </div>
@@ -718,7 +709,7 @@
         <div class="value-box__txt txt-st">delivered projects</div>
       </div>
       <div class="value-box__list-item">
-        <div class="value-box__number"><span>5 </span>years </div>
+        <div class="value-box__number"><span>5 </span> years </div>
         <div class="value-box__txt txt-st">of experience</div>
       </div>
       <div class="value-box__list-item">
@@ -817,17 +808,14 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- <script src="assets/libs/swiper.min.js"></script> -->
-
-    <!-- <script src="assets/libs/charming.min.js"></script> -->
-    <!-- <script src="assets/libs/imagesloaded.pkgd.min.js"></script> -->
-    <!-- <script src="assets/libs/demoad.js"></script> -->
-
+    <!-- from contacts -->
+    <script src="assets/libs/validate.js"></script>
+    <script src="assets/libs/aksFileUpload.min.js"></script>
+    <!-- end from contacts -->
     <script src="assets/libs/locomotive-scroll.min.js"></script>
-    <script src="assets/libs/TweenMax.min.js"></script>
+    <!-- <script src="assets/libs/TweenMax.min.js"></script> -->
     <script src="assets/libs/gsap.min.js"></script>
     <script src="assets/libs/ScrollTrigger.min.js"></script>
     <script src="assets/js/app.min.js"></script>
-    <script src="assets/libs/demo.js"></script>
 </body>
 </html>

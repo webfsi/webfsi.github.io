@@ -41,6 +41,19 @@
       font-size: fzd(14px);
       line-height: (20/14);
     }
+    &_lg-desc {
+      @include min-tablet {
+        font-weight: 700;
+        font-size: fzl(16px);
+        line-height: (24/16);
+        padding: fzl(12px) fzl(20px);
+      }
+      @include min-desktop {
+        font-size: fzd(16px);
+        line-height: (24/16);
+        padding: fzd(12px) fzd(20px);
+      }
+    }
   }
   
 }

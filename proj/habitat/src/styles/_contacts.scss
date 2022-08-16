@@ -8,6 +8,112 @@
   }
 }
 
+.contact-section-wrapp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .contact-section {
+    flex-grow: 1;
+  }
+  .footer-contact {
+    flex-shrink: 0;
+  }
+  .contact-end {
+    display: none;
+  }
+  &.send-form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .contact {
+      display: none;
+    }
+    .contact-end {
+      display: block;
+    }
+    .contact-section {
+      flex-grow: 1;
+    }
+    .footer-contact {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.contact-end {
+  &__tt {
+    position: relative;
+    margin-bottom: fzm(200px);
+    @include min-tablet {
+      margin-bottom: fzl(300px);
+    }
+    @include min-tablet {
+      margin-bottom: fzd(354px);
+    }
+    .h1 {
+      a {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 15%;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background-color: #fff;
+        }
+      }
+    }
+    &.hover {
+      .contact-end__img {
+        pointer-events: auto;
+        opacity: 1;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    right: 0;
+    top: 100%;
+    transition: all 0.3s ease-in-out;
+    
+    margin-top: fzm(-15px);
+
+    @include min-tablet {
+      margin-top: 0;
+      top: fzl(110px);
+    }
+    @include min-desktop {
+      margin-top: 0;
+      top: fzd(110px);
+      right: fzd(112px);
+    }
+    &-pic {
+      width: fzm(224px);
+      height: fzm(150px);
+      margin-bottom: fzm(8px);
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+      @include min-tablet {
+        width: fzl(400px);
+        height: fzl(250px);
+        margin-bottom: fzl(16px);
+      }
+      @include min-desktop {
+        width: fzd(528px);
+        height: fzd(354px);
+        margin-bottom: fzd(16px);
+      }
+    }
+  }
+}
+
 .contact {
   @include min-tablet {
     display: flex;
@@ -164,6 +270,13 @@
   @include min-desktop {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: fzd(144px);
+    max-width: fzd(752px);
+  }
+}
+
+.form-group_max-width {
+  @include min-desktop {
+    max-width: fzd(728px);
   }
 }
 
@@ -214,13 +327,18 @@
 .check-my {
   position: relative;
   display: block;
-  padding-left: fzm(32px);
+  // padding-left: fzm(32px);
+  padding-left: 32px;
   @include min-tablet {
-    padding-left: fzl(32px);
+    // padding-left: fzl(32px);
+    padding-left: 28px;
   }
   @include min-desktop {
-    padding-left: fzd(32px);
+    padding-left: 32px;
   }
+  // @include min-desktop {
+  //   padding-left: fzd(32px);
+  // }
   &__txt {
     font-weight: 300;
     font-size: fzm(16px);
@@ -244,36 +362,48 @@
     &:checked {
       + .check-my__field {
         background: url(../../assets/img/check.svg) center center no-repeat;
-        background-size: fzm(8px) fzm(6px);
-        @include min-tablet {
-          background-size: fzl(8px) fzl(6px);
-        }
-        @include min-desktop {
-          background-size: fzd(8px) fzd(6px);
-        }
+        background-size: 8px 6px;
+        // @include min-tablet {
+        //   background-size: fzl(8px) fzl(6px);
+        // }
+        // @include min-desktop {
+        //   background-size: fzd(8px) fzd(6px);
+        // }
       }
     }
   }
   &__field {
-    width: fzm(14px);
-    height: fzm(14px);
+    // width: fzm(14px);
+    // height: fzm(14px);
+    width: 14px;
+    height: 14px;
     position: absolute;
     top: 50%;
-    margin-top: fzm(-7px);
-    left: fzm(5px);
+    // margin-top: fzm(-7px);
+    margin-top: -7px;
+    // left: fzm(5px);
+    left: 5px;
     border: 1px solid #FFFFFF;
     @include min-tablet {
-      width: fzl(16px);
-      height: fzl(16px);
-      border: fzl(2px) solid #fff;
-      margin-top: fzl(-8px);
+      // width: fzl(16px);
+      // height: fzl(16px);
+      width: 16px;
+      height: 16px;
+      // border: fzl(2px) solid #fff;
+      border: 2px solid #fff;
+      // margin-top: fzl(-8px);
+      margin-top: -8px;
       left: 0;
     }
     @include min-desktop {
-      width: fzd(16px);
-      height: fzd(16px);
-      border: fzd(2px) solid #fff;
-      margin-top: fzd(-8px);
+      // width: fzd(16px);
+      // height: fzd(16px);
+      // border: fzd(2px) solid #fff;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #fff;
+      // margin-top: fzd(-8px);
+      margin-top: -8px;
       left: 0;
     }
   }
@@ -282,13 +412,15 @@
 .radio-my {
   position: relative;
   display: block;
-  padding-left: fzm(32px);
+  // padding-left: fzm(32px);
+  padding-left: 32px;
   @include min-tablet {
-    padding-left: fzl(28px);
+    // padding-left: fzl(28px);
+    padding-left: 28px;
   }
-  @include min-desktop {
-    padding-left: fzd(28px);
-  }
+  // @include min-desktop {
+  //   padding-left: fzd(28px);
+  // }
   &__txt {
     font-weight: 300;
     font-size: fzm(16px);
@@ -316,32 +448,41 @@
     }
   }
   &__field {
-    width: fzm(14px);
-    height: fzm(14px);
+    // width: fzm(14px);
+    // height: fzm(14px);
+    width: 14px;
+    height: 14px;
     position: absolute;
     top: 50%;
-    margin-top: fzm(-7px);
+    // margin-top: fzm(-7px);
+    margin-top: -7px;
     left: fzm(5px);
     border: 1px solid #FFFFFF;
     border-radius: 50%;
-    padding: fzm(3px);
+    // padding: fzm(3px);
+    padding: 3px;
     background-clip: content-box;
     background-color: transparent;
     @include min-tablet {
-      width: fzl(16px);
-      height: fzl(16px);
+      // width: fzl(16px);
+      // height: fzl(16px);
+      width: 16px;
+      height: 16px;
       left: 0;
-      margin-top: fzl(-8px);
-      padding: fzl(3px);
-      border: fzl(2px) solid #FFFFFF;
+      // margin-top: fzl(-8px);
+      margin-top: -8px;
+      // padding: fzl(3px);
+      padding: 3px;
+      // border: fzl(2px) solid #FFFFFF;
+      border: 2px solid #FFFFFF;
     }
-    @include min-desktop {
-      width: fzd(16px);
-      height: fzd(16px);
-      margin-top: fzd(-8px);
-      padding: fzd(3px);
-      border: fzl(2px) solid #FFFFFF;
-    }
+    // @include min-desktop {
+    //   width: fzd(16px);
+    //   height: fzd(16px);
+    //   margin-top: fzd(-8px);
+    //   padding: fzd(3px);
+    //   border: fzl(2px) solid #FFFFFF;
+    // }
   }
 }
 
