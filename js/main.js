@@ -1,5 +1,31 @@
 jQuery(function($){
 
+  // Перевірка чи користувач відвідував сторінку
+  if(localStorage.getItem('visited')) {
+    $('.preloader').addClass('is-hidden');
+    $('.preloader').css('display', 'none');
+  } else {
+    // Запуск таймера
+    $('.preloader').addClass('is-visible');
+    var counter = 10;
+    var interval = setInterval(function() {
+      counter--;
+      $('.preloader__time span').text(counter);
+      if (counter == 0) {
+        clearInterval(interval);
+        $('.preloader').addClass('is-hidden');
+      }
+    }, 1000);
+  }
+
+  // Обробник натискання на кнопку
+  $('.btn').click(function() {
+    $('.preloader').addClass('is-hidden');
+  });
+
+  // Встановлення прапорця відвідування
+  localStorage.setItem('visited', true);
+
   function debounce(fn, wait) {
     var timeout;
     return function() {
@@ -53,5 +79,6 @@ jQuery(function($){
       $('body').addClass('menu-open-wrapper-page');
     }
   });
+  
 
 });
