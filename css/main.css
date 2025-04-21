@@ -2431,10 +2431,11 @@ a:hover {
   left: 0;
   bottom: 0;
   right: 0;
+  border-radius: 50%;
 }
 
 .sbar-cap__inner .two {
-  opacity: 0;
+  /* opacity: 0;
   -webkit-animation-name: imgopen;
           animation-name: imgopen;
   -webkit-animation-duration: 8s;
@@ -2442,10 +2443,11 @@ a:hover {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+          animation-iteration-count: infinite; */
 }
 
 .circle {
+  display: none;
   stroke-dasharray: 630;
   stroke-dashoffset: 630;
   -webkit-animation-name: stroke;
@@ -2740,7 +2742,7 @@ a:hover {
 }
 
 .preloader {
-  position: absolute;
+  position: fixed;
   inset: 0;
   overflow: hidden;
   background: #35363A;
@@ -2748,6 +2750,7 @@ a:hover {
   text-align: center;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+  z-index: 111;
 }
 
 .preloader.is-visible {
@@ -2757,6 +2760,7 @@ a:hover {
 .preloader.is-hidden {
   opacity: 0;
   pointer-events: none;
+  /* display: block !important; */
 }
 
 .preloader__inner {
@@ -2799,8 +2803,8 @@ a:hover {
 }
 
 .preloader__img {
-  width: 30vw;
-  height: 30vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 30px;
