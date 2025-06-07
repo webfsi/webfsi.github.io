@@ -1,0 +1,86 @@
+.logos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // @include min-tablet {
+  //   justify-content: space-between;
+  // }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fzm(56px);
+    width: fzm(162px);
+    margin-bottom: fzm(56px);
+    line-height: 0;
+    @include min-tablet {
+      width: fzl(304px);
+      height: fzl(108px);
+      margin-bottom: fzl(104px);
+      margin-right: fzl(200px);
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    @include min-desktop {
+      width: fzd(416px);
+      height: fzd(144px);
+      margin-bottom: fzd(136px);
+      margin-right: fzd(256px);
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    picture {
+      width: 100%;
+    }
+    img {
+      max-height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.logotypes-section {
+  padding-bottom: fzm(88px);
+  @include min-tablet {
+    padding-bottom: fzl(40px);
+  }
+  @include min-desktop {
+    padding-bottom: fzd(64px);
+  }
+  .h3, .h2 {
+    margin-bottom: 48px;
+    text-align: center;
+    @include min-tablet {
+      margin-bottom: fzl(56px);
+    }
+    @include min-desktop {
+      margin-bottom: fzd(72px);
+    }
+  }
+}
+
+[data-anim-logos] {
+  &.logos-grid__item {
+    will-change: transform;
+    transform: translate3d(0, 40px, 0);
+    transition: opacity .6s ease, transform .6s ease;
+    --revealPosition: 60;
+    opacity: 0;
+    position: relative;
+    &.active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+

@@ -1,0 +1,378 @@
+.team-slider-wrapp {
+  width: 100%;
+  overflow: hidden;
+  padding-left: fzm(24px);
+  padding-right: fzm(24px);
+  @include min-tablet {
+    padding-left: fzl(292px);
+    padding-right: fzl(292px);
+  }
+  @include min-desktop {
+    padding-left: fzd(304px);
+    padding-right: fzd(304px);
+  }
+  // .team-slider {
+  //   // padding-left: fzm(24px);
+  //   // padding-right: fzm(24px);
+  //   // @include min-tablet {
+  //   //   padding-left: fzl(292px);
+  //   //   padding-right: fzl(292px);
+  //   // }
+  //   // @include min-desktop {
+  //   //   padding-left: fzl(304px);
+  //   //   padding-right: fzl(304px);
+  //   // }
+  // }
+}
+
+.team-list {
+  padding-bottom: fzm(154px);
+  @include min-tablet {
+    padding-bottom: fzl(144px);
+  }
+  @include min-desktop {
+    padding-bottom: fzd(200px);
+  }
+}
+.team-list__tt {
+  margin-bottom: fzm(48px);
+  @media (max-height: 730px) and (max-width: 767px) {
+    margin-bottom: fzm(30px);
+  }
+  @media (max-height: 750px) and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: fzm(10px);
+  }
+  @media (max-height: 850px) and (min-width: 550px) and (max-width: 767px) {
+    margin-bottom: fzm(10px);
+  }
+  @include min-tablet {
+    margin-bottom: fzl(40px);
+  }
+  @media (max-height: 680px) and (min-width: 1054px) and (max-width: 1439px) {
+    margin-bottom: fzl(20px);
+  }
+  @include min-desktop {
+    margin-bottom: fzd(56px);
+  }
+  @media (min-width: 1930px) {
+    margin-bottom: 55px;
+  }
+}
+
+.team-slider {
+  display: flex;
+  &__item {
+    position: relative;
+    display: block;
+    outline: none;
+    margin-right: 16px;
+    @include min-tablet {
+      margin-right: fzl(32px);
+    }
+    @include min-desktop {
+      margin-right: fzd(32px);
+    }
+    &:hover {
+      .team-slider__img-open {
+        opacity: 1;
+      }
+      .team-slider__subname {
+        span {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  &__img {
+    width: 312px;
+    height: 480px;
+    margin-bottom: 16px;
+    position: relative;
+    outline: none;
+    @media (max-height: 730px) and (max-width: 767px) {
+      height: 420px;
+    }
+    @media (max-height: 670px) and (max-width: 767px) {
+      height: 380px;
+    }
+    @media (max-height: 620px) and (max-width: 767px) {
+      height: 320px;
+    }
+    @media (max-height: 560px) and (max-width: 767px) {
+      height: 290px;
+    }
+    @media (max-height: 520px) and (max-width: 767px) {
+      height: 260px;
+    }
+    @media (max-height: 485px) and (max-width: 767px) {
+      height: 230px;
+    }
+    @media (max-height: 450px) and (max-width: 767px) {
+      height: 200px;
+    }
+    @media (max-height: 410px) and (max-width: 767px) {
+      height: 170px;
+    }
+    @media (max-height: 770px) and (min-width: 500px) and (max-width: 767px) {
+      height: 420px;
+    }
+    @media (max-height: 720px) and (min-width: 500px) and (max-width: 767px) {
+      height: 380px;
+    }
+    @media (max-height: 680px) and (min-width: 500px) and (max-width: 767px) {
+      height: 320px;
+    }
+    @media (max-height: 630px) and (min-width: 500px) and (max-width: 767px) {
+      height: 290px;
+    }
+    @media (max-height: 600px) and (min-width: 500px) and (max-width: 767px) {
+      height: 260px;
+    }
+    @media (max-height: 570px) and (min-width: 500px) and (max-width: 767px) {
+      height: 230px;
+    }
+    @media (max-height: 540px) and (min-width: 500px) and (max-width: 767px) {
+      height: 200px;
+    }
+    @media (max-height: 510px) and (min-width: 500px) and (max-width: 767px) {
+      height: 170px;
+    }
+    @media (max-height: 480px) and (min-width: 500px) and (max-width: 767px) {
+      height: 140px;
+    }
+    @include min-tablet {
+      width: fzl(416px);
+      height: fzl(480px);
+      margin-bottom: 12px;
+    }
+    // @media (max-height: 730px) and (min-width: 1200px) {
+    //   height: 490px;
+    // }
+    @media (max-height: 730px) and (min-width: 768px) and (max-width: 1439px) {
+      height: 420px;
+    }
+    @media (max-height: 640px) and (min-width: 768px) and (max-width: 1439px) {
+      height: 380px;
+    }
+    @media (max-height: 610px) and (min-width: 768px) and (max-width: 1439px) {
+      height: 350px;
+    }
+    @media (max-height: 580px) and (min-width: 768px) and (max-width: 1439px) {
+      height: 320px;
+    }
+    @media (max-height: 550px) and (min-width: 768px) and (max-width: 1439px) {
+      height: 290px;
+    }
+    @media (max-height: 520px) and (min-width: 768px) and (max-width: 1439px) {
+      height: 260px;
+    }
+    @media (max-height: 490px) and (min-width: 768px) and (max-width: 1439px) {
+      height: 230px;
+    }
+    @media (max-height: 1050px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 730px;
+      width: calc(730px - 65px);
+    }
+    @media (max-height: 1020px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 670px;
+      width: calc(670px - 65px);
+    }
+    @media (max-height: 990px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 640px;
+      width: calc(640px - 65px);
+    }
+    @media (max-height: 960px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 610px;
+      width: calc(610px - 65px);
+    }
+    @media (max-height: 930px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 580px;
+      width: calc(580px - 65px);
+    }
+    @media (max-height: 900px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 550px;
+      width: calc(550px - 65px);
+    }
+    @media (max-height: 870px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 520px;
+      width: calc(520px - 65px);
+    }
+    @media (max-height: 840px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 490px;
+      width: calc(490px - 65px);
+    }
+    @media (max-height: 810px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 460px;
+      width: calc(460px - 65px);
+    }
+    @media (max-height: 790px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 440px;
+      width: calc(440px - 65px);
+    }
+    @media (max-height: 760px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 410px;
+    }
+    @media (max-height: 730px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 420px;
+    }
+    @media (max-height: 680px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 420px;
+    }
+    @media (max-height: 650px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 390px;
+    }
+    @media (max-height: 620px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 360px;
+    }
+    @media (max-height: 590px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 330px;
+    }
+    @media (max-height: 560px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 300px;
+    }
+    @media (max-height: 530px) and (min-width: 1054px) and (max-width: 1439px) {
+      height: 270px;
+    }
+    @include min-desktop {
+      margin-bottom: fzd(16px);
+      width: fzd(528px);
+      height: fzd(640px);
+    }
+    @media (max-height: 1330px) and (min-width: 1440px) {
+      height: 720px;
+      width: calc(720px - 115px);
+    }
+    @media (max-height: 1150px) and (min-width: 1440px) {
+      height: 720px;
+      width: calc(720px - 115px);
+    }
+    @media (max-height: 1120px) and (min-width: 1440px) {
+      height: 690px;
+      width: calc(690px - 115px);
+    }
+    @media (max-height: 1090px) and (min-width: 1440px) {
+      height: 660px;
+      width: calc(660px - 115px);
+    }
+    @media (max-height: 1060px) and (min-width: 1440px) {
+      height: 630px;
+      width: calc(630px - 115px);
+    }
+    @media (max-height: 1000px) and (min-width: 1440px) {
+      height: 600px;
+      width: calc(600px - 115px);
+    }
+    @media (max-height: 950px) and (min-width: 1440px) {
+      width: fzd(450px);
+      height: 550px;
+    }
+    @media (max-height: 900px) and (min-width: 1440px) {
+      width: fzd(400px);
+      height: 500px;
+    }
+    @media (max-height: 840px) and (min-width: 1440px) {
+      width: fzd(380px);
+      height: 450px;
+    }
+    @media (max-height: 800px) and (min-width: 1440px) {
+      width: fzd(370px);
+      height: 400px;
+    }
+
+
+    @media (max-height: 2600px) and (min-width: 1950px) {
+      height: 690px;
+      width: calc(690px - 115px);
+    }
+    @media (max-height: 1200px) and (min-width: 1950px) {
+      height: 690px;
+      width: calc(690px - 115px);
+    }
+    @media (max-height: 1170px) and (min-width: 1950px) {
+      height: 660px;
+      width: calc(660px - 115px);
+    }
+    @media (max-height: 1140px) and (min-width: 1950px) {
+      height: 630px;
+      width: calc(630px - 115px);
+    }
+    @media (max-height: 1110px) and (min-width: 1950px) {
+      height: 600px;
+      width: calc(600px - 115px);
+    }
+    @media (max-height: 1080px) and (min-width: 1950px) {
+      height: 570px;
+      width: calc(570px - 115px);
+    }
+    @media (max-height: 1050px) and (min-width: 1950px) {
+      height: 540px;
+      width: calc(540px - 115px);
+    }
+    @media (max-height: 1030px) and (min-width: 1950px) {
+      height: 550px;
+      width: calc(550px - 115px);
+    }
+    @media (max-height: 1000px) and (min-width: 1950px) {
+      height: 500px;
+    }
+    @media (max-height: 950px) and (min-width: 1950px) {
+      height: 450px;
+    }
+    @media (max-height: 900px) and (min-width: 1950px) {
+      height: 400px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-open {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  &__name {
+    margin-bottom: 8px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: (28/20);
+    }
+    @media (min-width: 1950px) {
+      font-size: 32px;
+      line-height: (48/32);
+    }
+    @include min-tablet {
+      margin-bottom: 6px;
+    }
+    @include min-desktop {
+      margin-bottom: fzd(8px);
+    }
+  }
+  &__subname {
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: (18/12);
+    }
+    @media (min-width: 1950px) {
+      font-size: 22px;
+      line-height: (32/22);
+    }
+    span {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Playfair+Display:400i|Roboto:300,400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div id="modalPhone" class="st-modal">
+    <form class="form-st">
+      <div class="title-site title-site_h2">Нарисуем будущий проект</div>
+      <div class="form-st__txt">Заполните форму и мы перезвоним вам<br>в течении 15 минут!</div>
+      <div class="form-group">
+        <label for="formNameModal" class="form-group__label">Введите имя</label>
+        <input id="formNameModal" class="form-group__field" type="text" placeholder="Ваше имя">
+      </div>
+      <div class="form-group">
+        <label for="formEmailModal" class="form-group__label">Введите email</label>
+        <input id="formEmailModal" class="form-group__field" type="email" placeholder="Ваш email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+      </div>
+      <div class="form-group">
+        <label for="formPhoneModal" class="form-group__label">Введите телефон</label>
+        <input id="formPhoneModal" class="form-group__field mask-phone" type="tel" placeholder="+7 (___) ___-__-__">
+      </div>
+      <div class="form-group form-group_btn">
+        <input type="submit" value="Получите бесплатную консультацию" class="btn btn_long btn_max btn_md">
+      </div>
+    </form>
+  </div>
+  
+  <div id="modalStatus" class="st-modal st-modal_status">
+    <form class="form-st">
+      <div class="title-site title-site_h1">ПРОВЕРИТЬ СТАТУС ЗАКАЗА</div>
+      <div class="form-group form-group_status">
+        <label for="formPhoneModal" class="form-group__label">Введите телефон</label>
+        <input id="formPhoneModal" class="form-group__field mask-phone" type="tel" placeholder="+7 (___) ___-__-__">
+        <button type="submit" class="btn btn_sm btn_min-width">Проверить статус</button>
+      </div>
+  
+      <div class="status-grid">
+        <div class="status-grid__half-col">
+          <div class="status-name">Заказ №34335643345</div>
+        </div>
+        <div class="status-grid__half-col">
+          <div class="status-state">
+            <span class="status-state__green">Принят.</span>
+            <span> Находится на пошиве</span>
+          </div>
+          <div class="status-data">
+            День доставки: 23.23.2323
+          </div>
+        </div>
+        
+      </div>
+  
+    </form>
+  </div>
+
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="container group">
+      <div class="logo logo_header"><a href="#"><img loading="lazy" src="img/logo.jpg" alt="logotype"></a></div>
+  
+      <div class="head-menu">
+        <div class="burger-menu">
+          <div class="burger-menu-box">
+            <div class="burger-menu-inner"></div>
+          </div>
+        </div>
+  
+  
+        <div class="menu-wrapper-fixed">
+          <div class="menu-open-wrapper">
+  
+            <nav class="header-nav">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">О студии</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Проекты</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Цены</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Ткани</a>
+                </li>
+                <li class="menu-item menu-item_active">
+                  <a href="#" class="menu-item__link">Аксессуары</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Карнизы</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Жалюзи</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Виды штор</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Стили Штор</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Жилые зоны</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Отзывы</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Блог</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Контакты</a>
+                </li>
+                <li class="menu-item menu-item_mobile">
+                  <a href="#" class="menu-item__link">Электрокарнизы</a>
+                </li>
+                <li class="menu-item menu-item_mobile">
+                  <a href="#modalPhone" class="menu-item__link open-fancy">Обратный звонок</a>
+                </li>
+                <li class="menu-item menu-item_mobile">
+                  <a href="#modalPhone" class="menu-item__link open-fancy">Наш профиль <span class="icon-s icon-s_houzz"></span></a>
+                </li>
+              </ul>
+            </nav>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="head-ard">
+        <a href="#" class="head-ard__inner">
+          <span class="icon-s icon-s_marker"></span>
+          Московская область г. Красногорск, ул. Речная, дом 20, корп. 4
+        </a>
+      </div>
+  
+      <div class="head-soc">
+        <div class="head-soc__contact">
+          <ul class="social-sm">
+            <li class="social-sm__item">
+              <a href="#" class="social-sm__link" aria-label="social button instagram">
+                <span class="icon-s icon-s_inst"></span>
+              </a>
+            </li>
+            <li class="social-sm__item">
+              <a href="#" class="social-sm__link" aria-label="social button facebook">
+                <span class="icon-s icon-s_fb"></span>
+              </a>
+            </li>
+            <li class="social-sm__item">
+              <a href="#" class="social-sm__link" aria-label="social button vkontakte">
+                <span class="icon-s icon-s_vk"></span>
+              </a>
+            </li>
+          </ul>
+          <div class="head-soc-phone-box">
+            <div class="head-soc-phone">
+              <a href="tel:+74991100902" class="head-soc-phone__point">
+                <span class="icon-s icon-s_tel"></span>
+                <span class="head-soc-phone__txt">+7 (499) 110 09 02</span>
+              </a>
+            </div>
+            <div class="head-soc-phone">
+              <a href="tel:+79692831812" class="head-soc-phone__point">
+                <span class="icon-s icon-s_viber"></span>
+                <span class="head-soc-phone__txt">+7 (969) 283 18 12</span>
+              </a>
+            </div>
+            <div class="head-soc-phone">
+              <a href="mailto:info@runa-dekor.ru" class="head-soc-phone__point">
+                <span class="icon-s icon-s_message"></span>
+                <span class="head-soc-phone__txt">info@runa-dekor.ru</span>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="head-soc-btn">
+          <div class="head-soc-btn__item head-soc-btn__item_first">
+            <a href="#" class="btn btn_small btn_border btn_border_dark btn_min-width">Электрокарнизы</a>
+          </div>
+          <div class="head-soc-btn__item head-soc-btn__item_first">
+            <a href="#modalPhone" class="btn btn_small btn_min-width open-fancy">Обратный звонок</a>
+          </div>
+          <div class="head-soc-btn__item">
+            <a href="#" class="btn btn_icon btn_border btn_border_dark btn_small btn_min-width">
+              <span class="btn__icon-text">Наш профиль</span>
+              <span class="btn__icon btn__icon-right icon-s icon-s_houzz"></span>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="head-work">
+        <div class="head-work__inner">
+          <div class="head-work__name">Мы работаем</div>
+          <div class="head-work__tt">ONLINE</div>
+          <a href="#" class="head-work__link">Подробнее</a>
+        </div>
+      </div>
+  
+    </div>
+  </header>
+  <!-- end header -->
+  <div class="banner-boxes">
+    <div class="banner-box-right banner-box-right_slider">
+      <div class="banner-slider-wrapp animated delay-600ms bounce-in-right">
+        <div class="banner-slider">
+
+          <div class="banner-slider-item banner-slider-item_wrapp-img-right">
+            <img loading="lazy" src="img/banner-slide1.jpg" alt="banner-slide1">
+          </div>
+          <div class="banner-slider-item">
+            <img loading="lazy" src="img/banner-slide2.jpg" alt="banner-slide2">
+          </div>
+          <div class="banner-slider-item banner-slider-item_wrapp-img-left">
+            <img loading="lazy" src="img/banner-slide2.jpg" alt="banner-slide2">
+          </div>
+
+        </div>
+        <div class="banner-slider-nav">
+          <div class="slideshow-pager">
+            <span class="slideshow-pager__value"></span>
+            <span class="slideshow-pager__all"></span>
+          </div>
+          <div class="sl-arrow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-box-left animated bounce-in-left">
+      <div class="container">
+        <div class="banner-box-left__inner">
+          <div class="banner-cap-left-wrapp animated delay-halfs bounce-in-left">
+            <div class="banner-cap">
+              <div class="title-site title-site_h1 title-site_h1_big3">Текстильное оформление жилых и общественных интерьеров</div>
+            </div>
+            <a href="#" class="btn btn_md btn_md_font-lg btn_min-width_four">Подробнее</a>
+            <div class="banner-cap__text-img">
+              <img loading="lazy" src="img/text1.png" alt="name page">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="middle" class="bg-content">
+
+    <div class="section-st section-st_hidden section-st_md_second section-st_push-bt-lg">
+      <div class="container">
+        <div class="main-price-wrapp">
+          <div class="title-site text_center title-site_h1">Узнайте стоимость Ваших будущих штор </div>
+          <div class="main-price-wrapp__inner">
+            <div class="main-price">
+              <div class="main-price__form">
+                <form class="form-head show-animation bounce-in-left">
+                  <div class="form-head-cap form-head-cap_big">
+                    <div class="form-head-cap__tt-cap"><b>online</b> калькулятор</div>
+                  </div>
+                
+                  <div class="form-head-grid">
+                    <div class="form-head-grid__half-col form-head-group">
+                      <div class="form-head-group__name">1. Есть ли у Вас карниз?</div>
+                      <div class="group-head-radio form-head-group_push-left">
+                        <div class="group-head-radio__item fake-radio">
+                          <label for="headRadio1" class="form-head-group__label">Да</label>
+                          <input type="radio" name="headRadio" class="form-head-group__checkbox" id="headRadio1" checked>
+                        </div>
+                        <div class="group-head-radio__item fake-radio">
+                          <label for="headRadio2" class="form-head-group__label">Нет</label>
+                          <input type="radio" name="headRadio" class="form-head-group__checkbox" id="headRadio2">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-head-grid__half-col form-head-group">
+                      <div class="form-head-group__name">2. Вид карниза на Ваш вкус:</div>
+                      <div class="form-head-select form-head-group_push-left">
+                        <select class="slct-st">
+                          <option value="v1">Профильный</option>
+                          <option value="v2">Профильный 2</option>
+                          <option value="v3">Профильный 3</option>
+                          <option value="v4">Профильный 4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-head-grid__half-col form-head-group">
+                      <div class="form-head-group__name">3. Ширина и высота окна:</div>
+                      <div class="form-head-values form-head-group_push-left">
+                        <div class="s-range">
+                          <span class="s-range-val s-range-val_width" id="sliderRangeValueOne"></span>
+                          <div id="sliderRangeOne"></div>
+                        </div>
+                        <div class="s-range s-range_last">
+                          <span class="s-range-val s-range-val_height" id="sliderRangeValueTwo"></span>
+                          <div id="sliderRangeTwo"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-head-grid__half-col form-head-group">
+                      <div class="form-head-group__name">4. Тип штор на Ваш вкус:</div>
+                      <div class="form-head-select form-head-group_push-left">
+                        <select class="slct-img slct-img_big">
+                          <option data-image="img/icons/ic-select-big.jpg" value="v1">Классические</option>
+                          <option data-image="img/icons/ic-select-big.jpg" value="v2">Классические 2</option>
+                          <option data-image="img/icons/ic-select-big.jpg" value="v3">Классические 3</option>
+                          <option data-image="img/icons/ic-select-big.jpg" value="v4">Классические 4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="form-head-footer">
+                    <div class="form-group">
+                      <input class="form-group__field" type="email" placeholder="Введите email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-group__field mask-phone" type="tel" placeholder="Введите телефон">
+                    </div>
+                    <div class="form-group form-group_btn">
+                      <input type="submit" value="Отправить расчёт" class="btn btn_sm btn_min-width">
+                    </div>
+                  </div>
+                
+                </form>
+              </div>
+              <div class="main-price-images">
+                <div class="main-price-images__left show-animation bounce-in-left delay-600ms">
+                  <div class="img-inner-border">
+                    <img loading="lazy" src="img/price-img-left.jpg" alt="img">
+                  </div>
+                </div>
+                <div class="main-price-images__right show-animation bounce-in-right delay-900ms">
+                  <div class="img-inner-border img-inner-border_circle">
+                    <img loading="lazy" src="img/main-price-right.png" alt="img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-st section-st_bt-sm">
+      <div class="container">
+
+        <div class="main-title">
+          <div class="title-site title-site_h2 show-animation"><span class="main-title__value">01</span>Наши акции и скидки</div>
+          <div class="main-title__dublicate show-animation">Акции</div>
+          <p class="text-st font-light show-animation">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
+        </div>
+      
+        <div class="main-carousel-wrapp owl-carousel-wrapp-dots">
+          <div class="main-carousel slider-card">
+
+            <div class="main-carousel-item">
+              <div class="s-card">
+                <div class="s-card__img s-card__img_mob-wrapp">
+                  <img loading="lazy" src="img/stock-img.png" alt="stock">
+                </div>
+                <div class="s-card-info">
+                  <div class="s-card-info__value">-35%</div>
+                  <div class="s-card-info__tt">
+                    <div class="title-site title-site_h2">Акция!</div>
+                    <span class="cl-rose txt-lg">На Римские шторы</span>
+                  </div>
+                  <div class="s-card-info__txt">
+                    <p>Aкциoннaя cкидкa З5% pacпpocтpaняeтcя нa pимcкиe штopы c цeпoчным упpaвлeниeм (pимcкий кapниз "Aбcoлют") c нижe укaзaнными ткaнями "Kapинa".</p>
+                    <p>Aкциoннoe пpeдлoжeниe дeйcтвуeт c 01.11.2019 пo 01.12.2019.</p>
+                  </div>
+                  <div class="s-card-info__btn">
+                    <a href="#" class="btn btn_sm btn_min-width_second">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-carousel-item">
+              <div class="s-card">
+                <div class="s-card__img s-card__img_mob-wrapp">
+                  <img loading="lazy" src="img/stock-img.png" alt="stock">
+                </div>
+                <div class="s-card-info">
+                  <div class="s-card-info__value">-35%</div>
+                  <div class="s-card-info__tt">
+                    <div class="title-site title-site_h2">Акция!</div>
+                    <span class="cl-rose txt-lg">На Римские шторы</span>
+                  </div>
+                  <div class="s-card-info__txt">
+                    <p>Aкциoннaя cкидкa З5% pacпpocтpaняeтcя нa pимcкиe штopы c цeпoчным упpaвлeниeм (pимcкий кapниз "Aбcoлют") c нижe укaзaнными ткaнями "Kapинa".</p>
+                    <p>Aкциoннoe пpeдлoжeниe дeйcтвуeт c 01.11.2019 пo 01.12.2019.</p>
+                  </div>
+                  <div class="s-card-info__btn">
+                    <a href="#" class="btn btn_sm btn_min-width">Заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="section-st">
+      <div class="container">
+
+        <div class="main-title main-title_push-lg main-title_right main-title_right_push">
+          <div class="title-site title-site_h2 show-animation"><span class="main-title__value">02</span>Наши реализованные проекты</div>
+          <div class="main-title__dublicate show-animation main-title__dublicate_sm">Проекты</div>
+          <p class="show-animation text-st">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+        </div>
+      
+        <ul class="gallery-list">
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g1.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g2.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g3.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g4.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g5.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g6.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g4.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g5.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+          <li class="gallery-list__item">
+            <a href="#" class="gallery-box">
+              <img loading="lazy" src="img/g6.jpg" alt="img">
+              <div class="gallery-box-info">
+                <div class="gallery-box-info__cap">
+                  <div class="gallery-box-info__tt">Оформление гостиной</div>
+                  <div class="gallery-box-info__name">Дизайнер: ГАЛИНА ДОЛЖЕНКО</div>
+                </div>
+                <div class="gallery-box-info__body"><span class="btn btn_border btn_light btn_sm_second btn_min-width_second">О проекте</span></div>
+                <div class="gallery-box-info__footer">г. Москва, 1-ый Волконский переулок</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="text_center push-top--4">
+          <a href="#" class="btn btn_sm_second btn_min-width_second">Все проекты</a>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="section-st section-st_big">
+      <div class="container">
+        <div class="b-preview">
+          <div class="b-preview-inner">
+            <div class="b-preview-inner__tt">
+              <div class="title-site title-site_h2">Большой выбор тканей на любой вкус</div>
+            </div>
+            <div class="b-preview-inner__btn">
+              <a href="#" class="btn btn_min-width">Каталог тканей</a>
+            </div>
+            <div class="b-preview-inner__sub">От проверенных поставщиков</div>
+          </div>
+          <div class="crcl-box">
+            <div class="crcl crcl_1"><img loading="lazy" src="img/circl1.png" alt="circl"></div>
+            <div class="crcl crcl_2"><img loading="lazy" src="img/circl2.png" alt="circl"></div>
+            <div class="crcl crcl_3"><img loading="lazy" src="img/circl3.png" alt="circl"></div>
+            <div class="crcl crcl_4"><img loading="lazy" src="img/circl4.png" alt="circl"></div>
+            <div class="crcl crcl_5"><img loading="lazy" src="img/circl5.png" alt="circl"></div>
+            <div class="crcl crcl_6"><img loading="lazy" src="img/circl6.png" alt="circl"></div>
+            <div class="crcl crcl_7"><img loading="lazy" src="img/circl7.png" alt="circl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section-st">
+      <div class="container">
+        <div class="callback-box callback-box_sm">
+          <div class="callback-box__right">
+            <div class="callback-circle-img">
+              <img loading="lazy" src="img/lili.jpg" alt="img">
+            </div>
+            <div class="callback-box__txt">
+              <div class="callback-name show-animation bounce-in-right delay-300ms">ЛИЛИЯ<br>СЕЙФЕТДИНОВА</div>
+              <div class="callback-prof show-animation bounce-in-right delay-600ms">Дизайнер-декоратор</div>
+            </div>
+          </div>
+          <div class="callback-box__left">
+            <form action="#" class="form-st form-st_quest">
+              <div class="title-site title-site_h2 show-animation bounce-in-left">Затрудняетесь с выбором?</div>
+              <p class="form-st__txt-md">Оставьте заявку и наш дизайнер бесплатно приедет к вам с образцами ткани, сделает эскизы ваших будущих штор.</p>
+              <div class="form-group">
+                <label for="formName" class="form-group__label">Введите имя</label>
+                <input id="formName" class="form-group__field" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form-group">
+                <label for="formEmail" class="form-group__label">Введите email</label>
+                <input id="formEmail" class="form-group__field" type="email" placeholder="Ваш email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+              </div>
+              <div class="form-group">
+                <label for="formPhone" class="form-group__label">Введите телефон</label>
+                <input id="formPhone" class="form-group__field mask-phone" type="tel" placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group form-group_btn">
+                <input type="submit" value="Получите бесплатную консультацию" class="btn btn_long btn_max btn_md">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-st">
+      <div class="container">
+        <div class="main-title main-title_push-md main-title_push-left">
+          <div class="title-site title-site_h2 show-animation"><span class="main-title__value">03</span>О студии</div>
+          <div class="main-title__dublicate main-title__dublicate_sm2 show-animation">О студии</div>
+          <p class="show-animation">Ннемного информации о нашей студии.</p>
+        </div>
+        <div class="callback-block">
+          <div class="callback-block__right callback-block__right_order">
+            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="block-video open-fancy">
+              <img loading="lazy" src="img/video-img.jpg" alt="img">
+              <span class="icon-play"></span>
+            </a>
+          </div>
+          <div class="callback-block__left">
+            <div class="txt-box">
+              <div class="title-site title-site_h4">Дизайн-студия “Руна декор”</div>
+              <div class="txt-box__italic">“Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit.<br> Aenean commodo ligula  dolor.”</div>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+              <a href="#" class="btn btn_sm_second btn_min-width_second">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-st section-st_push-bt-non">
+      <div class="container">
+        <div class="main-title main-title_right main-title_right_push-sm main-title_push-lg">
+          <div class="title-site title-site_h2 show-animation"><span class="main-title__value">04</span>Наши преимущества</div>
+          <div class="main-title__dublicate main-title__dublicate_sm3 show-animation">Преимущества</div>
+          <p class="show-animation">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa. </p>
+        </div>
+        <div class="skills-icons">
+          <div class="skills-icon show-animation fadeInUp">
+            <div class="skills-icon__icon">
+              <span class="icon icon_ic-1"></span>
+            </div>
+            <p>Широкий асортимент тканей в наличии и под заказ</p>
+          </div>
+          <div class="skills-icon show-animation fadeInUp">
+            <div class="skills-icon__icon">
+              <span class="icon icon_ic-2"></span>
+            </div>
+            <p>Контроль качества <br>пошива изделий</p>
+          </div>
+          <div class="skills-icon show-animation fadeInUp">
+            <div class="skills-icon__icon">
+              <span class="icon icon_ic-3"></span>
+            </div>
+            <p>Изготовление<br> в короткие сроки</p>
+          </div>
+          <div class="skills-icon show-animation fadeInUp">
+            <div class="skills-icon__icon">
+              <span class="icon icon_ic-4"></span>
+            </div>
+            <p>Подберём комплект штор <br>под любой бюджет</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section-st section-st_big">
+      <div class="container">
+        <div class="b-preview show-animation zoomIn">
+          <div class="b-preview-inner b-preview-inner_wrapp">
+            <div class="b-preview-inner__sub">У нас не только шторы</div>
+            <div class="b-preview-inner__tt">
+              <div class="title-site title-site_h2">Большой выбор карнизов, аксесуаров и декоративных элементов</div>
+            </div>
+            <div class="b-preview-inner__btn-sm">
+              <a href="#" class="btn btn_min-width">Каталог тканей</a>
+            </div>
+            <div class="b-preview-inner__sub">От проверенных поставщиков</div>
+          </div>
+          <div class="crcl-box crcl-box_second">
+            <div class="crcl crcl_1 show-animation bounce-in-left"><img loading="lazy" src="img/circl11.png" alt="circl"></div>
+            <div class="crcl crcl_2 show-animation bounce-in-left"><img loading="lazy" src="img/circl12.png" alt="circl"></div>
+            <div class="crcl crcl_3 show-animation bounce-in-right"><img loading="lazy" src="img/circl13.png" alt="circl"></div>
+            <div class="crcl crcl_4 show-animation bounce-in-left"><img loading="lazy" src="img/circl14.png" alt="circl"></div>
+            <div class="crcl crcl_5 show-animation bounce-in-right"><img loading="lazy" src="img/circl15.png" alt="circl"></div>
+            <div class="crcl crcl_6 show-animation bounce-in-left"><img loading="lazy" src="img/circl16.png" alt="circl"></div>
+            <div class="crcl crcl_7 show-animation bounce-in-right"><img loading="lazy" src="img/circl17.png" alt="circl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-st section-st_md section-st_bt-sm">
+      <div class="container">
+        <div class="bl-variants">
+          <div class="title-site text_center bl-variants__tt-first title-site_h2">Выберите удобный вариант<br> начала работы с нами</div>
+          <div class="bl-variants-list">
+            <div class="bl-variant">
+              <div class="bl-variant-cap">
+                <div class="bl-variant-cap__txt">
+                  <div class="txt-tt-md">1 вариант</div>
+                  <p>
+                    Пришлите фото Вашего интерьера нам на почту 
+                    <a href="mailto:runadekor@mail.ru">runadekor@mail.ru</a>
+                    <br>
+                    или на WhatsApp 
+                    <a href="tel:+79037156501">+7 903 715 65 01</a>
+                  </p>
+                  <p>Наш дизайнер сделает Вам предложение по подбору тканей и оформлению окон, а так же покрывала, подушек,чехлов, столового текстиля. Порекомендует карниз и солнцезащиту на окна. Сделает предварительный расчёт стоимости.</p>
+                </div>
+                <div class="bl-variant-cap__icon">
+                  <img loading="lazy" src="img/icons/s-camera.png" alt="icon variant">
+                </div>
+              </div>
+              <div class="bl-variant-img">
+                <a href="img/v-img1.jpg" data-fancybox="image-variant1" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img1.jpg" alt="img"></a>
+                <a href="img/v-img2.jpg" data-fancybox="image-variant1" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img2.jpg" alt="img"></a>
+                <a href="img/v-img3.jpg" data-fancybox="image-variant1" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img3.jpg" alt="img"></a>
+                <a href="img/v-img4.jpg" data-fancybox="image-variant1" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img4.jpg" alt="img"></a>
+              </div>
+            </div>
+            <div class="bl-variant">
+              <div class="bl-variant-cap">
+                <div class="bl-variant-cap__txt">
+                  <div class="txt-tt-md">2 вариант</div>
+                  <p>Пригласите дизайнера к Вам в гости для замера и подбора тканей в удобное для Вас время.</p>
+                  <p>При замере сложных окон и больших объёмах с дизайнером выезжает замерщик. В последующем все сложные линии карнизов, прежде чем попасть на производство простраиваются в компьюторной программе Архикад. Это обеспечивает безукаризненную посадку карнизов  с учётом конструктивных особенностей.</p>
+                  <p>Заполните заявку на сайте или позвоните по тел. <a href="tel:+74956460529">+7 495 646 05 29</a></p>
+                </div>
+                <div class="bl-variant-cap__icon">
+                  <img loading="lazy" src="img/icons/s-avto.png" alt="icon variant">
+                </div>
+              </div>
+              <form action="#" class="bl-variant-form form-st form-st_quest">
+                <div class="form-group-grid">
+                  <div class="form-group form-group-grid__three-col">
+                    <label for="formNameVariant2" class="form-group__label">Введите имя</label>
+                    <input id="formNameVariant2" class="form-group__field" type="text" placeholder="Ваше имя">
+                  </div>
+                  <div class="form-group form-group-grid__three-col">
+                    <label for="formPhoneVariant2" class="form-group__label">Введите телефон</label>
+                    <input id="formPhoneVariant2" class="form-group__field mask-phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+                  </div>
+                  <div class="form-group form-group-grid__three-col">
+                    <input type="submit" value="Пригласить дизайнера" class="btn btn_long btn_min-width_second btn_md">
+                  </div>
+                </div>
+              </form>
+              <div class="bl-variant-img">
+                <a href="img/v-img5.jpg" data-fancybox="image-variant2" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img5.jpg" alt="img"></a>
+                <a href="img/v-img6.jpg" data-fancybox="image-variant2" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img6.jpg" alt="img"></a>
+                <a href="img/v-img7.jpg" data-fancybox="image-variant2" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img7.jpg" alt="img"></a>
+                <a href="img/v-img8.jpg" data-fancybox="image-variant2" class="bl-variant-img__item open-fancy"><img loading="lazy" src="img/v-img8.jpg" alt="img"></a>
+              </div>
+            </div>
+            <div class="bl-variant">
+              <div class="bl-variant-cap">
+                <div class="bl-variant-cap__txt">
+                  <div class="txt-tt-md">3 вариант</div>
+                  <p>Позвоните по тел. <a href="tel:+74956460529">+7 495 646 05 29</a></p>
+                  <p>Обсудите с дизайнером детали Вашего будущего оформления окна. Дизайнер подскажет, как в Вашем случае лучше построить работу. Сориентирует по бюджету.</p>
+                </div>
+                <div class="bl-variant-cap__icon">
+                  <img loading="lazy" src="img/icons/s-tell.png" alt="icon variant">
+                </div>
+              </div>
+              <div class="bl-variant-img">
+                <a href="img/v-img9.jpg" data-fancybox="image-variant3" class="bl-variant-img__item bl-variant-img__item_long open-fancy"><img loading="lazy" src="img/v-img9.jpg" alt="img"></a>
+                <a href="img/v-img10.jpg" data-fancybox="image-variant3" class="bl-variant-img__item bl-variant-img__item_long open-fancy"><img loading="lazy" src="img/v-img10.jpg" alt="img"></a>
+                <a href="img/v-img11.jpg" data-fancybox="image-variant3" class="bl-variant-img__item bl-variant-img__item_long open-fancy"><img loading="lazy" src="img/v-img11.jpg" alt="img"></a>
+              </div>
+            </div>
+          </div>
+          <div class="title-site text_center title-site_h2">А также Вы можете приехать к нам в салон, получить консультацию дизайнера и сделать заказ</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section-st section-st_lg section-st_bt-sm">
+      <div class="container">
+
+        <div class="main-title main-title_push-md">
+          <div class="title-site title-site_h2 show-animation"><span class="main-title__value">05</span>Как мы работаем</div>
+          <div class="main-title__dublicate main-title__dublicate_sm4 main-title__dublicate_center-tt show-animation">Этапы работы</div>
+          <p class="text-st font-light show-animation">От  8 до 21 дня, или ещё быстрее, <br>новые шторы  будут радовать  Вас!</p>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card show-animation">
+            <div class="about-card__img"><img loading="lazy" src="img/about-card1.png" alt="img"></div>
+            <div class="about-card__content">
+              <div class="about-card__time">1-3 ДНЯ</div>
+              <div class="about-card__name">Встречаемся, обсуждаем дизайн и стоимость проекта. </div>
+              <div class="about-card__txt">Подбираем ткани, рисуем эскизы,  составляем смету, заключаем договор. Вы вносите  предоплату.</div>
+            </div>
+          </div>
+          <div class="about-card show-animation">
+            <div class="about-card__img"><img loading="lazy" src="img/about-card2.png" alt="img"></div>
+            <div class="about-card__content">
+              <div class="about-card__time">3-7 ДНЯ</div>
+              <div class="about-card__name">Готовим проект в производство.</div>
+              <div class="about-card__txt">Закупаем ткани, фурнитуру. Заказываем на производстве карнизы, солнцезащиту. Передаём ткани в швейный цех.</div>
+            </div>
+          </div>
+          <div class="about-card show-animation">
+            <div class="about-card__img"><img loading="lazy" src="img/about-card3.png" alt="img"></div>
+            <div class="about-card__content">
+              <div class="about-card__time">3-8 ДНЯ</div>
+              <div class="about-card__name">Пошив в нашем цеху при дизайн-студии.</div>
+              <div class="about-card__txt">На современном оборудовании специалистами с опытом работы по изготовлению штор более 10 лет .Дизайнер контролирует работу.</div>
+            </div>
+          </div>
+          <div class="about-card show-animation about-card_tabl-hidden">
+            <div class="about-card__img"><img loading="lazy" src="img/about-card4.png" alt="img"></div>
+            <div class="about-card__content">
+              <div class="about-card__time">1-3 ДНЯ</div>
+              <div class="about-card__name">Доставка, монтаж, драпировка.  </div>
+              <div class="about-card__txt">В удобное для Вас время сделаем доставку, установим аккуратно и чисто карнизы, погладим, повесим шторы. Вы вносите доплату.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="desc-bl">
+          <div class="desc-bl__tt">Итого: 8-21 дней!</div>
+          <div class="desc-bl__txt-md">Срок изготовления зависит от объёма заказа, сложности моделей  и загруженности производства на текущий момент. На заказные ткани срок увеличивается на время доставки.</div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="section-st">
+      <div class="container">
+        <div class="callback-box callback-box_center callback-box_rotate-box">
+          <div class="callback-box__right callback-box__right_lg">
+            <div class="callback-circle-img callback-rectangle-img callback-circle-img_lg show-animation pulse">
+              <img loading="lazy" src="img/avto.jpg" alt="img">
+            </div>
+          </div>
+          <div class="callback-box__left">
+            <div class="title-site title-site_size-md title-site_h2 show-animation bounce-in-right">Вызовите мастера на дом</div>
+            <form action="#" class="form-st form-st_quest form-st_quest_sm">
+              <p class="form-st__txt-md">Оставьте заявку и наш дизайнер бесплатно приедет к вам с образцами ткани, сделает эскизы ваших будущих штор.</p>
+              <div class="form-group form-group_sm-width form-group_icon">
+                <label for="formData" class="form-group__label">Выберите дату:</label>
+                <input id="formData" class="form-group__field datepicker" type="text" placeholder="19 ноября 2019">
+                <span class="icon icon_calendar"></span>
+              </div>
+              <div class="form-group form-group_sm-width form-group_icon">
+                <label for="formTime" class="form-group__label">Выберите время</label>
+                <input id="formTime" class="form-group__field timepicker" type="text" placeholder="12:00 - 13:00">
+                <span class="icon icon_time"></span>
+              </div>
+              <div class="form-group form-group_sm-width">
+                <label for="formPhone1" class="form-group__label">Введите телефон</label>
+                <input id="formPhone1" class="form-group__field mask-phone" type="tel" placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group form-group_btn">
+                <input type="submit" value="Получите бесплатную консультацию" class="btn btn_long btn_max btn_md">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-st section-st_push-bt-md">
+      <div class="container">
+        <div class="main-title main-title_push-left push-bt--5">
+          <div class="title-site title-site_h2 show-animation"><span class="main-title__value">06</span>Отзывы клиентов</div>
+          <div class="main-title__dublicate show-animation">Отзывы</div>
+          <p class="text-st font-light show-animation">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class="slider-wrapp-review">
+          <div class="slider-review slider-dots-big">
+            <div class="slider-review-item">
+              <div class="review-box">
+                <div class="review-box__value"><span>01</span></div>
+                <div class="review-box-grid">
+                  <div class="review-box-grid__left">
+                    <div class="name-review"><span>Наталья Круглова</span></div>
+                    <div class="review-screen">
+                      <img loading="lazy" src="img/comment.jpg" alt="comment">
+                    </div>
+                  </div>
+                  <div class="review-box-grid__right">
+                    <div class="review-name-project">Проект “Голубая спальня”</div>
+                    <div class="review-txt">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.”</div>
+                    <div class="review-slider-sm dots-slider-sm">
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-review-item">
+              <div class="review-box">
+                <div class="review-box__value"><span>02</span></div>
+                <div class="review-box-grid">
+                  <div class="review-box-grid__left">
+                    <div class="name-review"><span>Наталья Круглова</span></div>
+                    <div class="review-screen">
+                      <img loading="lazy" src="img/comment.jpg" alt="comment">
+                    </div>
+                  </div>
+                  <div class="review-box-grid__right">
+                    <div class="review-name-project">Проект “Голубая спальня”</div>
+                    <div class="review-txt">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.do eiusmod tempor incididunt.”</div>
+                    <div class="review-slider-sm dots-slider-sm">
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                      <div class="review-slider-sm__item">
+                        <a href="img/doss.jpg" data-fancybox="images" class="open-fancy img-review-sm"><img loading="lazy" src="img/doss.jpg" alt="img"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text_center">
+          <a href="#" class="btn btn_ff-second btn_min-width_three btn_md">Все отзывы</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-st">
+      <div class="container">
+
+        <div class="main-title main-title_right main-title_push-lg">
+          <div class="title-site title-site_h2 show-animation"><span class="main-title__value">07</span>Наша команда</div>
+          <div class="main-title__dublicate main-title__dublicate_sm show-animation">Команда</div>
+          <p class="show-animation">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus</p>
+        </div>
+        
+        <div class="command-boxes">
+
+          <div class="command-box">
+            <div class="command-box__img">
+              <img loading="lazy" src="img/pic-sm1.jpg" alt="pic-sm">
+            </div>
+            <div class="command-box__content">
+              <div class="command-box__name">Лилия Сейфетдинова</div>
+              <div class="command-box__txt">Дизайнер-декоратор</div>
+              <a href="#" class="btn btn_sm btn_border btn_border_dark">Подробнее</a>
+            </div>
+          </div>
+          
+          <div class="command-box">
+            <div class="command-box__img">
+              <img loading="lazy" src="img/pic-sm2.jpg" alt="pic-sm">
+            </div>
+            <div class="command-box__content">
+              <div class="command-box__name">Галина Долженко</div>
+              <div class="command-box__txt">Руководитель студии, <br>ведущий дизайнер-декоратор</div>
+              <a href="#" class="btn btn_sm btn_border btn_border_dark">Подробнее</a>
+            </div>
+          </div>
+          
+          <div class="command-box">
+            <div class="command-box__img">
+              <img loading="lazy" src="img/pic-sm3.jpg" alt="pic-sm">
+            </div>
+            <div class="command-box__content">
+              <div class="command-box__name">Татьяна Терентьева</div>
+              <div class="command-box__txt">Дизайнер-декоратор</div>
+              <a href="#" class="btn btn_sm btn_border btn_border_dark">Подробнее</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="section-st">
+      <div class="container">
+        <div class="callback-block callback-block_center">
+          <div class="callback-block__right callback-block__right_order">
+            <div class="img-inner-border img-inner-border_inner img-inner-border_lg-right">
+              <img loading="lazy" src="img/callback1.jpg" alt="img">
+            </div>
+          </div>
+          <div class="callback-block__left">
+            <form action="#" class="form-st form-st_quest">
+              <div class="title-site title-site_push-md title-site_size-md title-site_h2 bounce-in-right show-animation">Нарисуем будущий проект <div class="big-text cl-rose">Удалённо!</div></div>
+              <p class="form-st__txt-md form-st__txt-md_push-sm max-490">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+              <div class="form-group form-group_md-width">
+                <label for="formName2" class="form-group__label">Введите имя</label>
+                <input id="formName2" class="form-group__field" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form-group form-group_md-width">
+                <label for="formEmail2" class="form-group__label">Введите email</label>
+                <input id="formEmail2" class="form-group__field" type="email" placeholder="Ваш email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+              </div>
+              <div class="form-group form-group_md-width">
+                <label for="formPhone2" class="form-group__label">Введите телефон</label>
+                <input id="formPhone2" class="form-group__field mask-phone" type="tel" placeholder="+7 (___) ___-__-__">
+              </div>
+              <div class="form-group form-group_file">
+                <input type="file">
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Заказать проект" class="btn btn_long btn_min-width_second btn_md">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <div class="container">
+        <div class="title-site text_center title-site_h4">Подписывайтесь на наши ресурсы в социальных сетях</div>
+      </div>
+      <div class="footer-social-box">
+        <div class="container">
+          <ul class="social">
+            <li class="social-item fadeInUp show-animation">
+              <a href="#" class="social-item__link">
+                <span class="icon-s icon-s_inst"></span>
+                <span>INSTAGRAM</span>
+              </a>
+            </li>
+            <li class="social-item fadeInUp show-animation">
+              <a href="#" class="social-item__link">
+                <span class="icon-s icon-s_vk"></span>
+                <span>Vkontakte </span>
+              </a>
+            </li>
+            <li class="social-item fadeInUp show-animation">
+              <a href="#" class="social-item__link">
+                <span class="icon-s icon-s_fb"></span>
+                <span>FACEBOOK</span>
+              </a>
+            </li>
+            <li class="social-item fadeInUp show-animation">
+              <a href="#" class="social-item__link">
+                <span class="icon-s icon-s_youtube"></span>
+                <span>YOUTUBE</span>
+              </a>
+            </li>
+            <li class="social-item fadeInUp show-animation">
+              <a href="#" class="social-item__link">
+                <span class="icon-s icon-s_houzz2"></span>
+                <span>HOUZZ</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- #middle-->
+ 
+</div><!-- #wrapper -->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="f-body">
+    <div class="container">
+      <div class="f-box">
+        <div class="f-box__logo">
+          <div class="logo"><a href="#"><img loading="lazy" src="img/logo.jpg" alt=""></a></div>
+        </div>
+        <div class="f-box__contact">
+          <div class="f-contact">
+            <div class="f-contact__item f-contact__item_first">
+              <ul class="f-contact-box">
+                <li class="f-contact-box__item">
+                  <div class="f-contact-box__inner">
+                    <div class="f-contact-box__icon">
+                      <span class="icon-s icon-s_marker"></span>
+                    </div>
+                    <div class="f-contact-box__txt">
+                      Московская область г. Красногорск,<br>ул. Речная, дом 20, корп. 4
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="f-contact__item f-contact__item_second">
+              <ul class="f-contact-box">
+                <li class="f-contact-box__item">
+                  <a href="mailto:info@runa-dekor.ru" class="f-contact-box__inner">
+                    <div class="f-contact-box__icon">
+                      <span class="icon-s icon-s_message2"></span>
+                    </div>
+                    <div class="f-contact-box__txt">info@runa-dekor.ru</div>
+                  </a>
+                </li>
+                <li class="f-contact-box__item">
+                  <div class="f-contact-box__inner">
+                    <div class="f-contact-box__icon">
+                      <span class="icon-s icon-s_time2"></span>
+                    </div>
+                    <div class="f-contact-box__txt text_right">Пн-сб: 10.00-20.00<br>Вс: 10.00-18.00</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="f-contact__item f-contact__item_three">
+              <ul class="f-contact-box">
+                <li class="f-contact-box__item">
+                  <a href="tel:+74991100902" class="f-contact-box__inner">
+                    <div class="f-contact-box__icon">
+                      <span class="icon-s icon-s_tell2"></span>
+                    </div>
+                    <div class="f-contact-box__txt">+7 (499) 110 09 02</div>
+                  </a>
+                </li>
+                <li class="f-contact-box__item">
+                  <a href="tel:+79692831812" class="f-contact-box__inner">
+                    <div class="f-contact-box__icon">
+                      <span class="icon-s icon-s_viber2"></span>
+                    </div>
+                    <div class="f-contact-box__txt">+7 (969) 283 18 12</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="f-contact f-contact_btn">
+            <div class="f-contact__item f-contact__item_first">
+              <a href="#modalStatus" class="btn btn_small btn_border btn_border_dark btn_min-width open-fancy">Проверить статус заказа</a>
+            </div>
+
+            <div class="f-contact__item f-contact__item_second">
+              <a href="#" class="btn btn_small btn_border btn_border_dark btn_min-width">Оплатить заказ</a>
+            </div>
+            <div class="f-contact__item f-contact__item_three">
+              <a href="#" class="btn btn_small btn_min-width">Обратный звонок</a>
+            </div>
+          </div>
+        </div> <!--f-box__contact -->
+      </div>
+
+      <div class="f-nav">
+        <ul class="f-nav-menu">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О студии</a></li>
+          <li><a href="#">Проекты</a></li>
+          <li><a href="#">Цены</a></li>
+          <li class="active"><a href="#">Ткани</a></li>
+          <li><a href="#">Аксессуары</a></li>
+          <li><a href="#">Карнизы</a></li>
+          <li><a href="#">Жалюзи</a></li>
+          <li><a href="#">Виды штор</a></li>
+          <li><a href="#">Стили штор</a></li>
+          <li><a href="#">Жилые зоны</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="f-ps">
+    <div class="container">
+      <ul class="f-ps-list">
+        <li>&copy; 2019 Все права защищены</li>
+        <li><a href="#">Заявление о конфиденциальности</a></li>
+        <li><a href="#">Договор публичной оферты</a></li>
+        <li>
+          <a href="#" class="develop">
+            <span class="develop__name">Разработка сайта:</span>
+            <span class="develop__img">
+              <img loading="lazy" src="img/update-logo.png" alt="logotype update">
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs/jcf.js"></script>
+<script src="js/libs/jquery.fancybox.min.js"></script>
+<script src="js/libs/nouislider.min.js"></script>
+<script src="js/libs/slick.min.js"></script>
+<!-- picker -->
+<script src="js/libs/picker.js"></script>
+<script src="js/libs/picker.date.js"></script>
+<script src="js/libs/picker.time.js"></script>
+<script src="js/libs/ru_RU.js"></script>
+<!-- end picker -->
+<script src="js/main.js"></script>
+
+<script>
+jQuery(function($){
+//----------------------------------------------------
+// Data & Time field
+//
+  // timepicker
+  $('.timepicker').pickatime({
+    min: [8,30],
+    max: [18,0],
+    formatLabel: 'H:i',
+    clear: 'Очистить'
+  });
+
+  //datepicker
+  $('.datepicker').pickadate();
+
+//----------------------------------------------------
+// slider price
+//
+  //slider range 1
+  var rangeSliderOne = document.getElementById('sliderRangeOne');
+
+  noUiSlider.create(rangeSliderOne, {
+      start: [0],
+      // step: 0.05,
+      behaviour: 'tap',
+      connect: [true, false],
+      range: {
+          'min': [0],
+          'max': [4]
+      }
+  });
+
+  var rangeSliderOneValueElement = document.getElementById('sliderRangeValueOne');
+
+  rangeSliderOne.noUiSlider.on('update', function (values, handle) {
+      rangeSliderOneValueElement.innerHTML = values[handle];
+  });
+
+  //slider range 2
+  var rangeSliderTwo = document.getElementById('sliderRangeTwo');
+
+  noUiSlider.create(rangeSliderTwo, {
+      start: [1.75],
+      behaviour: 'tap',
+      connect: [true, false],
+      range: {
+          'min': [0],
+          'max': [4]
+      }
+  });
+
+  var rangeSliderTwoValueElement = document.getElementById('sliderRangeValueTwo');
+
+  rangeSliderTwo.noUiSlider.on('update', function (values, handle) {
+      rangeSliderTwoValueElement.innerHTML = values[handle];
+  });
+});
+</script>
+
+</body>
+</html>
