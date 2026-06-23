@@ -1,0 +1,114 @@
+.mark-boxes {
+  margin-bottom: fzm(136px);
+  @include min-tablet {
+    margin-bottom: fzl(120px);
+  }
+  @include min-desktop {
+    margin-bottom: fzd(216px);
+  }
+}
+.mark-box {
+  margin-bottom: fzm(96px);
+  @include min-tablet {
+    margin-bottom: fzl(120px);
+  }
+  @include min-desktop {
+    margin-bottom: fzd(176px);
+  }
+  &__tt {
+    margin-bottom: fzm(33px);
+    @include min-tablet {
+      margin-bottom: fzl(48px);
+    }
+    @include min-desktop {
+      margin-bottom: fzd(56px);
+    }
+  }
+  &__btns {
+    margin-right: fzm(-8px);
+    display: flex;
+    flex-wrap: wrap;
+    @include min-tablet {
+      margin-right: fzl(-24px);
+    }
+    @include min-desktop {
+      margin-right: fzd(-24px);
+    }
+    .btn {
+      margin-bottom: fzm(8px);
+      margin-right: fzm(8px);
+      flex-shrink: 0;
+      @include min-tablet {
+        margin-bottom: fzl(24px);
+        margin-right: fzl(24px);
+      }
+      @include min-desktop {
+        margin-bottom: fzd(24px);
+        margin-right: fzd(24px);
+      }
+      i {
+        display: none;
+        font-style: normal;
+        @include min-tablet {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.cursor {
+  &.hover-rad {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 400px;
+      height: 400px;
+      margin-left: -350px;
+      margin-right: -350px;
+      border-radius: 50%;
+      background: radial-gradient(20vmax at 808.922px 173.234px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+      z-index: 9999999;
+    }
+  }
+}
+
+:root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+
+.mark-boxes {
+  position: relative;
+  .mark-box__tt {
+    z-index: 3;
+    position: relative;
+  }
+  @media (min-width: 1054px) {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: radial-gradient(
+        circle 25vmax at var(--cursorX) var(--cursorY),
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,.3) 80%,
+        rgba(0,0,0,.6) 100%
+      );
+      // background: radial-gradient(
+      //   circle 30vmax at var(--cursorX) var(--cursorY), 
+      //   rgba(0, 0, 0, 0) 0%, 
+      //   rgba(0, 0, 0, 0.5) 90%, 
+      //   rgba(0, 0, 0, 0.6) 100%);
+    }
+  }
+}
